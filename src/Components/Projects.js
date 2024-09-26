@@ -7,14 +7,13 @@ import KidneyPredictionImage from '../images/KidneyPrediction.jpg';
 const Projects = () => {
   const projectBoxStyle = {
     textAlign: 'center',
-    margin: '20px',
+    margin: '200px',
   };
 
   return (
     <div>
       <h1 className='projectHeading'>My <b>Projects</b></h1>
-      <div className='project'>
-        {/* Pass the corresponding images and names */}
+      <div className='project'>        
         <ProjectBox 
           projectPhoto={FraudDetectionImage} 
           projectName="Fraud Detection" 
