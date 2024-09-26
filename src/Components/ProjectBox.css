@@ -1,45 +1,49 @@
 .projectBox {
     text-align: center;
-    margin: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for better visuals */
-    padding: 10px;
-    border-radius: 10px;
+    margin: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 40px;
     transition: box-shadow 0.3s ease;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
 }
 
 .projectBox:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    box-shadow: 0 18px 32px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
 }
 
 .projectImage {
-    width: 100%; /* Make the image responsive */
-    max-width: 200px; /* Restrict maximum width */
+    width: 200%; /* Make the image responsive */
+    max-width: 400px; /* Restrict maximum width */
     height: auto; /* Maintain aspect ratio */
     border-radius: 8px;
     transition: transform 0.3s ease; /* Smooth hover effect */
 }
 
 .projectImage:hover {
-    transform: scale(1.2); /* Slight zoom effect on hover */
+    transform: scale(1.2); 
 }
 
 /* Media queries for responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 1768px) {
     .projectBox {
-        margin: 10px; /* Reduce margin on smaller screens */
+        margin: 40px; /* Reduce margin on smaller screens */
     }
 
     .projectImage {
-        max-width: 150px; /* Smaller image size on tablets */
+        max-width: 250px; /* Smaller image size on tablets */
     }
 }
 
 @media (max-width: 480px) {
     .projectBox {
-        margin: 5px;
+        margin: 15px;
     }
 
     .projectImage {
-        max-width: 120px; /* Even smaller image size on mobile */
+        max-width: 240px; /* Even smaller image size on mobile */
     }
 }

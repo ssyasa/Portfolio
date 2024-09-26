@@ -7,7 +7,7 @@ import KidneyPredictionImage from '../images/KidneyPrediction.jpg';
 const Projects = () => {
   const projectBoxStyle = {
     textAlign: 'center',
-    margin: '200px',
+    margin: '400px',
   };
 
   return (
