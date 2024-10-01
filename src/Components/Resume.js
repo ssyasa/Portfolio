@@ -5,8 +5,9 @@ import { Document, Page, pdfjs } from 'react-pdf';
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import 'react-pdf/dist/esm/Page/TextLayer.css';
 
-// Use a stable URL for the worker
-pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+// Import the worker directly from pdfjs-dist
+import pdfWorker from 'pdfjs-dist/build/pdf.worker.entry';
+pdfjs.GlobalWorkerOptions.workerSrc = pdfWorker;
 
 const Resume = () => {
   const [wid, setWid] = useState(window.innerWidth);
@@ -28,7 +29,7 @@ const Resume = () => {
         <Page pageNumber={1} scale={wid < 700 ? (wid > 475 ? 0.7 : 0.5) : 1} />
       </Document>
 
-      <a href={pdf} target='_blank' download="Shreyas's Resume" rel="noreferrer">
+      <a href={pdf} target='_blank' download="Resume" rel="noreferrer">
         <button className='downloadCV' type='button'>
           <h3><BsDownload />&nbsp; Download CV</h3>
         </button>
