@@ -6,35 +6,35 @@ const ProjectBox = ({ projectPhoto, projectName, projectDescription, projectLink
   const styles = {
     projectBox: {
       textAlign: 'center',
-      margin: '50px auto',
-      boxShadow: '0 8px 16px rgba(128, 0, 128, 0.2)', // Purple shadow
-      padding: '60px',
-      borderRadius: '40px',
-      maxWidth: '1000px', // Reduced max-width for smaller box
+      margin: '30px auto', // Reduced margin for compactness
+      boxShadow: '0 16px 32px rgba(128, 0, 128, 0.2)', // Purple shadow
+      padding: '40px', // Reduced padding for a smaller box
+      borderRadius: '40px', // Smaller border radius
+      maxWidth: '800px', // Further reduced max-width
       transition: 'box-shadow 0.3s ease, transform 0.3s ease', // Added transform transition
       position: 'relative', // Necessary for button positioning
       overflow: 'hidden', // Prevent overflow on scale
-      backgroundColor: '#fff', // Added background color
+      backgroundColor: '#272e54', // Added background color
     },
     projectBoxHover: {
-      boxShadow: '0 25px 40px rgba(128, 0, 128, 0.3)', // Deeper purple shadow on hover
+      boxShadow: '0 15px 30px rgba(128, 0, 128, 0.3)', // Deeper purple shadow on hover
       transform: 'translateY(-5px)', // Slight lift effect
     },
     projectImage: {
       width: '100%',
-      maxWidth: '600px', // Reduced image size
+      maxWidth: '300px', // Reduced image size
       height: 'auto',
-      borderRadius: '20px',
-      transition: 'transform 0.3s ease',
+      borderRadius: '30px', // Smaller border radius for the image
+      transition: 'transform 0.3s ease', // Smooth transition for the image
     },
     projectImageHover: {
-      transform: 'scale(1.2)', // Zoom effect on hover
+      transform: 'scale(1.1)', // Zoom effect on hover (slightly smaller zoom)
     },
     projectName: {
       fontFamily: "'Poppins', sans-serif",
-      fontSize: '1.8rem',
-      color: '#333',
-      marginTop: '40px',
+      fontSize: '2.0rem', // Slightly smaller font size
+      color: '#dbc21f',
+      marginTop: '20px', // Reduced spacing above the text
       transition: 'color 0.3s ease', // Color transition on hover
     },
     projectNameHover: {
@@ -42,16 +42,16 @@ const ProjectBox = ({ projectPhoto, projectName, projectDescription, projectLink
     },
     projectDescription: {
       fontFamily: "'Poppins', sans-serif",
-      fontSize: '1.2rem',
+      fontSize: '1rem', // Smaller font size for description
       color: '#666',
       marginTop: '10px',
-      marginBottom: '20px', // Spacing below the description
+      marginBottom: '15px', // Reduced spacing below the description
     },
     button: {
       backgroundColor: '#11d3ff',
-      color: '#525050',
+      color: '#474444',
       border: 'none',
-      padding: '10px 20px',
+      padding: '8px 16px', // Reduced padding for button
       borderRadius: '5px',
       cursor: 'pointer',
       transition: 'background-color 0.3s ease, transform 0.3s ease',
@@ -79,7 +79,7 @@ const ProjectBox = ({ projectPhoto, projectName, projectDescription, projectLink
         alt={projectName}
         style={styles.projectImage}
         onMouseEnter={(e) => (e.currentTarget.style.transform = styles.projectImageHover.transform)}
-        onMouseLeave={(e) => (e.currentTarget.style.transform = styles.projectImage.transform)}
+        onMouseLeave={(e) => (e.currentTarget.style.transform = 'scale(1)')} // Reset to original size
       />
       <p
         style={styles.projectName}
