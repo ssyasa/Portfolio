@@ -6,9 +6,11 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.3.3",
     "lottie-react": "^2.4.0",
     "pdfjs-dist": "^4.6.82",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.10.5",
     "react-dom": "^18.2.0",
     "react-icons": "^4.9.0",
     "react-parallax-tilt": "^1.7.151",
@@ -52,6 +54,7 @@
     "globals": "^15.9.0",
     "typescript-eslint": "^8.7.0",
     "webpack": "^5.95.0",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "worker-loader": "^3.0.8"
   }
 }
