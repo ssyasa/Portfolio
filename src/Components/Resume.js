@@ -5,7 +5,7 @@ import pdf from "../Shreyas CR_Resume sept 2024.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function ResumeNew() {
+function Resume() {
   const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -59,4 +59,4 @@ function ResumeNew() {
   );
 }
 
-export default ResumeNew;
+export default Resume;
