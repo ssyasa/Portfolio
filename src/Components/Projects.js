@@ -153,12 +153,17 @@ const AllProjects = () => {
     container: {
       padding: '20px',
     },
+    searchWrapper: {
+      display: 'flex',
+      justifyContent: 'flex-end', // Aligns the search input to the right
+      marginBottom: '30px',
+      marginTop: '50px', // Margin to push down by 30px
+    },
     searchInput: {
       padding: '5px',
       borderRadius: '15px',
-      border: '2px solid #ccc',
-      width: '100%',
-      marginBottom: '30px',
+      border: '1px solid #ccc',
+      width: '300px',
       boxSizing: 'border-box',
     },
     projectContainer: {
@@ -175,13 +180,15 @@ const AllProjects = () => {
 
   return (
     <div style={styles.container}>
-      <input
-        type="text"
-        placeholder="Search projects..."
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-        style={styles.searchInput}
-      />
+      <div style={styles.searchWrapper}>
+        <input
+          type="text"
+          placeholder="Search projects..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          style={styles.searchInput}
+        />
+      </div>
       <div style={styles.projectContainer}>
         {filteredProjects.length > 0 ? (
           filteredProjects.map((project, index) => (
