@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import Skills from './Skills.js';
 import Tilt from 'react-parallax-tilt';
@@ -9,45 +10,34 @@ const About = () => {
     <>
       <div className='AboutPage'>
         <div className='AboutText'>
-          <h1 className='AboutTextHeading'>Get to <b>know</b> me!</h1>
+          <h1 className='AboutTextHeading'>Let’s <b>Build</b> Something Great Together</h1>
           <p>
-            Hi, my name is <b>Shreyas C.R</b> and I am from Bengaluru, India.
-            I'm a <b>Full-Stack Developer</b> and a final-year college student pursuing a <b>Bachelor of Engineering in Computer Science</b>. <br/><br/>
-            I have worked as a <b>Machine Learning Intern</b> and have experience in developing predictive models and web applications.
-            I love creating innovative projects with a focus on problem-solving and clean design. You can check out some of my work in the projects section.<br/><br/>
-            I am <b>open</b> to collaborations or roles where I can learn, contribute, and grow. Feel free to connect with me, links are in the footer.<br/>
-            Apart from coding, I enjoy exploring new technologies and developing machine learning models to solve real-world problems.
+            Hello! I'm <b>Shreyas C.R.</b>, a dedicated and results-driven <b>Freelance Developer</b> based in Bengaluru, India. With a diverse skill set in <b>Data Analytics, Web Development, Machine Learning, and Data Science</b>, I specialize in creating customized solutions that solve complex business problems and add tangible value to my clients.<br/><br/>
+
+            I hold a <b>Bachelor’s degree in Computer Science</b> and have worked with clients from various industries, providing end-to-end services from conceptualization to deployment. Whether you need a <b>full-stack web application</b>, a cutting-edge <b>predictive model</b>, or <b>data-driven insights</b>, I’m here to deliver exceptional results.<br/><br/>
+
+            As a freelancer, I take pride in my ability to communicate effectively, manage time efficiently, and ensure that every project I undertake is completed to the highest standards. With experience across <b>Data Analytics, Web Development, Machine Learning</b> and more, I bring technical expertise and creative problem-solving to every project.<br/><br/>
+
+            If you’re looking for a Freelancer who’s passionate about technology and committed to delivering solutions that exceed expectations, let’s connect! Whether it's a short-term project or a long-term partnership, I’m excited to bring your vision to life.<br/><br/>
+
+            <b>Let’s work together and make your next project a success!</b><br/>
           </p>
         </div>
 
         <div>
           <Tilt>
-              <Lottie 
+            <Lottie 
               className="illustration" 
               animationData={Coder} 
               loop={true} 
             />
           </Tilt>
         </div>
-
       </div>
       
       <h1 className='SkillsHeading'>Professional Skillset</h1>
       <div className='skills'>
-        
-        <Skills skill='Python' />
-        <Skills skill='React' />
-        <Skills skill='Node' />
-        <Skills skill='Express' />
-        <Skills skill='MongoDb' />
-        <Skills skill='Git' />
-        <Skills skill='TensorFlow' />
-        <Skills skill='Scikit-learn' />
-        <Skills skill='MySQL' />
-        <Skills skill='AWS' />
-        <Skills skill='Java' />
-        <Skills skill='Bootstrap'/>
-        
+        <Skills />
       </div>
     </>
   );
