@@ -3,6 +3,10 @@ import { SiPostman, SiMongodb, SiMysql, SiGit, SiTensorflow, SiAmazonaws, SiBoot
 import { FaReact, FaNodeJs, FaPython, FaHtml5, FaCss3Alt } from "react-icons/fa";
 import { DiJavascript1 } from "react-icons/di";
 import './Skills.css'; // Importing the external CSS file for hover effect
+import { SiScikitlearn, SiPandas, SiNumpy, SiOpencv, SiPytorch, SiKeras } from "react-icons/si";
+import { FaBrain } from "react-icons/fa"; // For AI Ethics (no dedicated icon, using Brain as placeholder)
+import { AiOutlineLineChart } from "react-icons/ai"; // For Matplotlib (no dedicated icon, using line chart)
+import { MdLanguage } from "react-icons/md"; 
 
 // List of all unique skills categorized
 const skillsData = {
@@ -33,15 +37,15 @@ const skillsData = {
     { skill: "Docker", icon: <SiDocker /> },
     { skill: "Kubernetes", icon: <SiKubernetes /> },
     { skill: "TensorFlow", icon: <SiTensorflow /> },
-    { skill: "Scikit-Learn", icon: <SiTensorflow /> }, // Using TensorFlow icon as placeholder
-    { skill: "Pandas", icon: <SiTensorflow /> }, // Placeholder for Pandas
-    { skill: "NumPy", icon: <SiTensorflow /> }, // Placeholder for NumPy
-    { skill: "Matplotlib", icon: <SiTensorflow /> }, // Placeholder for Matplotlib
-    { skill: "NLP", icon: <SiTensorflow /> }, // Placeholder for NLP
-    { skill: "Keras", icon: <SiTensorflow /> }, // Added Keras
-    { skill: "OpenCV", icon: <SiTensorflow /> }, // Added OpenCV
-    { skill: "PyTorch", icon: <SiTensorflow /> }, // Added PyTorch
-    { skill: "AI Ethics", icon: <SiTensorflow /> }, // Added AI Ethics
+    { skill: "Scikit-Learn", icon: <SiScikitlearn /> }, // Using the Scikit-Learn icon
+    { skill: "Pandas", icon: <SiPandas /> }, // Using the Pandas icon
+    { skill: "NumPy", icon: <SiNumpy /> }, // Using the NumPy icon
+    { skill: "Matplotlib", icon: <AiOutlineLineChart /> }, // Using line chart icon for Matplotlib
+    { skill: "NLP", icon: <MdLanguage /> }, // Using language icon for NLP
+    { skill: "Keras", icon: <SiKeras /> }, // Using Keras icon
+    { skill: "OpenCV", icon: <SiOpencv /> }, // Using OpenCV icon
+    { skill: "PyTorch", icon: <SiPytorch /> }, // Using PyTorch icon
+    { skill: "AI Ethics", icon: <FaBrain /> }, // Using brain icon for AI Ethics
   ],
 };
 
