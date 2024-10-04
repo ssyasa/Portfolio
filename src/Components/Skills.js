@@ -1,75 +1,93 @@
 /* eslint-disable react/react-in-jsx-scope */
-import { SiPostman, SiMongodb, SiMysql, SiGit, SiTensorflow, SiAmazonaws, SiBootstrap, SiFigma, SiCanva, SiDocker, SiKubernetes, SiGooglecloud, SiMicrosoft } from "react-icons/si";
-import { FaReact, FaNodeJs, FaPython, FaHtml5, FaCss3Alt, FaJava } from "react-icons/fa";
+import { SiPostman, SiMongodb, SiMysql, SiGit, SiTensorflow, SiAmazonaws, SiBootstrap, SiFigma, SiCanva, SiDocker, SiKubernetes } from "react-icons/si";
+import { FaReact, FaNodeJs, FaPython, FaHtml5, FaCss3Alt } from "react-icons/fa";
 import { DiJavascript1 } from "react-icons/di";
 
-// List of all unique skills
-const skillsData = [
-  { skill: "Python", icon: <FaPython /> },
-  { skill: "SQL", icon: <SiMysql /> },
-  { skill: "Postman", icon: <SiPostman /> },
-  { skill: "Git", icon: <SiGit /> },
-  { skill: "Excel", icon: <SiMysql /> }, // Placeholder for Excel
-  { skill: "AWS", icon: <SiAmazonaws /> },
-  { skill: "Docker", icon: <SiDocker /> },
-  { skill: "Kubernetes", icon: <SiKubernetes /> },
-  { skill: "Azure", icon: <SiMicrosoft /> }, // Used Microsoft icon as a placeholder for Azure
-  { skill: "GCP", icon: <SiGooglecloud /> },
-  { skill: "HTML5", icon: <FaHtml5 /> },
-  { skill: "CSS3", icon: <FaCss3Alt /> },
-  { skill: "JavaScript", icon: <DiJavascript1 /> },
-  { skill: "Bootstrap", icon: <SiBootstrap /> },
-  { skill: "React", icon: <FaReact /> },
-  { skill: "Node", icon: <FaNodeJs /> },
-  { skill: "MongoDb", icon: <SiMongodb /> },
-  { skill: "Figma", icon: <SiFigma /> },
-  { skill: "Canva", icon: <SiCanva /> },
-  { skill: "Pandas", icon: <SiTensorflow /> }, // Placeholder for Pandas
-  { skill: "NumPy", icon: <SiTensorflow /> }, // Placeholder for NumPy
-  { skill: "Matplotlib", icon: <SiTensorflow /> }, // Placeholder for Matplotlib
-  { skill: "TensorFlow", icon: <SiTensorflow /> },
-  { skill: "Scikit-Learn", icon: <SiTensorflow /> }, // Using TensorFlow icon as placeholder
-  { skill: "Keras", icon: <SiTensorflow /> }, // Placeholder for Keras
-  { skill: "NLP", icon: <SiTensorflow /> }, // Placeholder for NLP
-];
+// List of all unique skills categorized
+const skillsData = {
+  dataAnalytics: [
+    { skill: "Python", icon: <FaPython /> },
+    { skill: "SQL", icon: <SiMysql /> },
+    { skill: "Postman", icon: <SiPostman /> },
+    { skill: "Git", icon: <SiGit /> },
+    { skill: "Excel", icon: <SiMysql /> }, // Placeholder for Excel
+  ],
+  webDevelopment: [
+    { skill: "HTML5", icon: <FaHtml5 /> },
+    { skill: "CSS3", icon: <FaCss3Alt /> },
+    { skill: "JavaScript", icon: <DiJavascript1 /> },
+    { skill: "Bootstrap", icon: <SiBootstrap /> },
+    { skill: "React", icon: <FaReact /> },
+    { skill: "Node", icon: <FaNodeJs /> },
+    { skill: "MongoDb", icon: <SiMongodb /> },
+    { skill: "Figma", icon: <SiFigma /> },
+    { skill: "Canva", icon: <SiCanva /> },
+    { skill: "Express", icon: <SiPostman /> }, // Added Express
+    { skill: "TypeScript", icon: <DiJavascript1 /> }, // Added TypeScript
+    { skill: "Sass", icon: <SiBootstrap /> }, // Added Sass
+    { skill: "Jest", icon: <SiGit /> }, // Added Jest
+  ],
+  machineLearning: [
+    { skill: "AWS", icon: <SiAmazonaws /> },
+    { skill: "Docker", icon: <SiDocker /> },
+    { skill: "Kubernetes", icon: <SiKubernetes /> },
+    { skill: "TensorFlow", icon: <SiTensorflow /> },
+    { skill: "Scikit-Learn", icon: <SiTensorflow /> }, // Using TensorFlow icon as placeholder
+    { skill: "Pandas", icon: <SiTensorflow /> }, // Placeholder for Pandas
+    { skill: "NumPy", icon: <SiTensorflow /> }, // Placeholder for NumPy
+    { skill: "Matplotlib", icon: <SiTensorflow /> }, // Placeholder for Matplotlib
+    { skill: "NLP", icon: <SiTensorflow /> }, // Placeholder for NLP
+    { skill: "Keras", icon: <SiTensorflow /> }, // Added Keras
+    { skill: "OpenCV", icon: <SiTensorflow /> }, // Added OpenCV
+    { skill: "PyTorch", icon: <SiTensorflow /> }, // Added PyTorch
+    { skill: "AI Ethics", icon: <SiTensorflow /> }, // Added AI Ethics
+    
+  ],
+};
 
 const Skills = () => {
-  // Function to render skills
-  const renderSkills = () => (
-    <div style={styles.skillsContainer}>
-      {skillsData.map(({ skill, icon }, index) => (
-        <div 
-          key={index} 
-          className='skill-box' 
-          style={styles.skillBox}
-        >
-          <div className='skill-header' style={styles.skillHeader}>
-            <div className='skill-icon' style={styles.skillIcon}>
-              {icon}
+  // Function to render skills in the defined sections
+  const renderSkills = (skills, title) => (
+    <div style={styles.skillsSection}>
+      <h3 style={styles.sectionTitle}>{title}</h3>
+      <div style={styles.skillsContainer}>
+        {skills.map(({ skill, icon }, index) => (
+          <div 
+            key={index} 
+            className='skill-box' 
+            style={styles.skillBox}
+          >
+            <div className='skill-header' style={styles.skillHeader}>
+              <div className='skill-icon' style={styles.skillIcon}>
+                {icon}
+              </div>
+              <h4 style={styles.skillName}>{skill}</h4>
             </div>
-            <h3 style={styles.skillName}>{skill}</h3>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 
   return (
     <div>
-      <h2 style={styles.sectionTitle}>Skills</h2>
-      {renderSkills()}
+      {renderSkills(skillsData.dataAnalytics, "Data Analytics Skills")}
+      {renderSkills(skillsData.webDevelopment, "Web Development (MERN Stack, UI/UX Design) Skills")}
+      {renderSkills(skillsData.machineLearning, "Machine Learning Skills")}
     </div>
   );
 };
 
 // Custom styles
 const styles = {
+  skillsSection: {
+    margin: '20px 0',
+  },
   skillsContainer: {
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'center',
     gap: '20px',
-    margin: '20px 0',
   },
   skillBox: {
     margin: '10px',
@@ -77,9 +95,13 @@ const styles = {
     backgroundColor: '#272e54',
     borderRadius: '10px',
     width: '150px',
-    boxShadow: '0 16px 32px rgba(128, 0, 128, 0.4)', 
+    boxShadow: 'none', // No shadow by default
     textAlign: 'center',
     transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+  },
+  skillBoxHover: {
+    transform: 'scale(1.05)',
+    boxShadow: '0 24px 48px rgba(128, 0, 128, 0.8)', // Purple shadow on hover
   },
   skillHeader: {
     display: 'flex',
@@ -95,13 +117,13 @@ const styles = {
   skillName: {
     fontFamily: "'Poppins', sans-serif",
     fontSize: '1.2rem',
-    color: '#dbc21f',
+    color: 'cyan', // Updated text color to cyan
   },
   sectionTitle: {
     fontSize: '1.5rem',
-    color: '#dbc21f',
+    color: 'cyan', // Updated section title color to cyan
     textAlign: 'center',
-    margin: '40px 0 20px',
+    margin: '20px 0',
     fontFamily: "'Poppins', sans-serif",
   },
 };
