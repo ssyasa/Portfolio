@@ -1,0 +1,25 @@
+/* CSS for hover effect on skill-box */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .skill-box {
+    margin: 10px;
+    padding: 15px;
+    background-color: #272e54;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    box-shadow: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skill-box:hover {
+    transform: scale(1.2);
+    box-shadow: 0 24px 48px rgba(186, 22, 186, 0.5);
+     /* Purple shadow on hover */  
+}
+  

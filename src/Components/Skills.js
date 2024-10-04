@@ -1,7 +1,8 @@
 /* eslint-disable react/react-in-jsx-scope */
-import { SiPostman, SiMongodb, SiMysql, SiGit, SiTensorflow, SiAmazonaws, SiBootstrap, SiFigma, SiCanva, SiDocker, SiKubernetes } from "react-icons/si";
+import { SiPostman, SiMongodb, SiMysql, SiGit, SiTensorflow, SiAmazonaws, SiBootstrap, SiFigma, SiCanva, SiDocker, SiKubernetes, SiMicrosoftexcel } from "react-icons/si";
 import { FaReact, FaNodeJs, FaPython, FaHtml5, FaCss3Alt } from "react-icons/fa";
 import { DiJavascript1 } from "react-icons/di";
+import './Skills.css'; // Importing the external CSS file for hover effect
 
 // List of all unique skills categorized
 const skillsData = {
@@ -10,7 +11,7 @@ const skillsData = {
     { skill: "SQL", icon: <SiMysql /> },
     { skill: "Postman", icon: <SiPostman /> },
     { skill: "Git", icon: <SiGit /> },
-    { skill: "Excel", icon: <SiMysql /> }, // Placeholder for Excel
+    { skill: "Excel", icon: <SiMicrosoftexcel /> }, // Placeholder for Excel
   ],
   webDevelopment: [
     { skill: "HTML5", icon: <FaHtml5 /> },
@@ -41,7 +42,6 @@ const skillsData = {
     { skill: "OpenCV", icon: <SiTensorflow /> }, // Added OpenCV
     { skill: "PyTorch", icon: <SiTensorflow /> }, // Added PyTorch
     { skill: "AI Ethics", icon: <SiTensorflow /> }, // Added AI Ethics
-    
   ],
 };
 
@@ -50,13 +50,9 @@ const Skills = () => {
   const renderSkills = (skills, title) => (
     <div style={styles.skillsSection}>
       <h3 style={styles.sectionTitle}>{title}</h3>
-      <div style={styles.skillsContainer}>
+      <div className="skills-container"> {/* Use CSS class here */}
         {skills.map(({ skill, icon }, index) => (
-          <div 
-            key={index} 
-            className='skill-box' 
-            style={styles.skillBox}
-          >
+          <div key={index} className="skill-box"> {/* Use CSS class for hover effect */}
             <div className='skill-header' style={styles.skillHeader}>
               <div className='skill-icon' style={styles.skillIcon}>
                 {icon}
@@ -82,26 +78,6 @@ const Skills = () => {
 const styles = {
   skillsSection: {
     margin: '20px 0',
-  },
-  skillsContainer: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'center',
-    gap: '20px',
-  },
-  skillBox: {
-    margin: '10px',
-    padding: '15px',
-    backgroundColor: '#272e54',
-    borderRadius: '10px',
-    width: '150px',
-    boxShadow: 'none', // No shadow by default
-    textAlign: 'center',
-    transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-  },
-  skillBoxHover: {
-    transform: 'scale(1.05)',
-    boxShadow: '0 24px 48px rgba(128, 0, 128, 0.8)', // Purple shadow on hover
   },
   skillHeader: {
     display: 'flex',
