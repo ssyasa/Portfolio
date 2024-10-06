@@ -2,12 +2,12 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 import ChatAppImage from '../images/chat_app.jpg';
-import FraudDetectionImage from '../images/fraud-detection-using-machine-ml.webp';
+import FraudDetectionImage from '../images/fraud-detection-using-machine-ml.PNG';
 import HousePredictionImage from '../images/hpp.jpg';
 import CarPredictionImage from '../images/car price prediction.jpg';
 import CreditCardFraudImage from '../images/credit card fraud.jpg';
 import KidneyPredictionImage from '../images/chronic-kidney-disease-prediction.png';
-import SentimentAnalysisImage from '../images/NLP.jpg';
+import SentimentAnalysisImage from '../images/nlp1.jpeg.JPG';
 
 // Project data
 const projects = [
