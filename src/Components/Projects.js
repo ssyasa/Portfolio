@@ -1,13 +1,13 @@
 /* eslint-disable no-undef */
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
-import ChatAppImage from '../images/FraudDetection copy 4.jpg';
-import FraudDetectionImage from '../images/FraudDetection.jpg';
-import HousePredictionImage from '../images/HousePrediction.jpg';
-import CarPredictionImage from '../images/FraudDetection copy.jpg';
-import CreditCardFraudImage from '../images/FraudDetection copy 2.jpg';
-import KidneyPredictionImage from '../images/FraudDetection copy 3.jpg';
-import SentimentAnalysisImage from '../images/FraudDetection copy 3.jpg';
+import ChatAppImage from '../images/chat_app.jpg';
+import FraudDetectionImage from '../images/fraud-detection-using-machine-ml.webp';
+import HousePredictionImage from '../images/hpp.jpg';
+import CarPredictionImage from '../images/car price prediction.jpg';
+import CreditCardFraudImage from '../images/credit card fraud.jpg';
+import KidneyPredictionImage from '../images/chronic-kidney-disease-prediction.png';
+import SentimentAnalysisImage from '../images/NLP.jpg';
 
 // Project data
 const projects = [
