@@ -15,7 +15,7 @@
 I am a passionate **Computer Science** graduate specializing in **Machine Learning**, **Full-Stack Development**, and **Data Science**. With over **3 years of freelancing** and internship experience, I excel in delivering **cutting-edge software solutions** that drive business growth, customer engagement, and operational efficiency. 
 
 ### 💼 Why Choose Me?
-With expertise in various domains including **Machine Learning models**, **predictive analytics**, and **full-stack web applications**, I can help you turn your vision into reality. I leverage **innovative technologies** to deliver **customized solutions** that not only meet but exceed client expectations. 
+With expertise in various domains including **Machine Learning models**, **Predictive Analytics**, and **Full-Stack Web Applications**, I can help you turn your vision into reality. I leverage **innovative technologies** to deliver **customized solutions** that not only meet but exceed client expectations. 
 
 ---
 
