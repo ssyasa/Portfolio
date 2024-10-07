@@ -2,8 +2,6 @@
 
 <br/>
 
----
-
 # 🚀 Shreyas C.R — Freelancer | Data Analyst | Machine Learning Enthusiast | Full-Stack Developer
 
 📍 **Location:** Bengaluru, India  
