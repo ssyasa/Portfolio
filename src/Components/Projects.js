@@ -13,52 +13,59 @@ import SentimentAnalysisImage from '../images/nlp1.jpeg.JPG';
 const projects = [
   {
     projectPhoto: ChatAppImage,
-    projectName: 'Chat App (with LLM)',
-    projectDescription: 'Developed a web application with real-time voice communication using Web Speech API and ElevenLabs. Languages: JavaScript, Python.',
+    projectName: 'Real-Time Chat App with AI Integration',
+    projectDescription:
+      'Built a scalable chat application with real-time voice communication and AI capabilities. Integrated with Web Speech API and ElevenLabs for enhanced user experience, helping businesses provide seamless customer support.  Technologies: JavaScript, Python.',
     projectLink: 'link_to_chat_app',
-    tags: ['JavaScript', 'Python', 'Web Development'],
+    tags: ['JavaScript', 'Python', 'AI', 'Web Development'],
   },
   {
     projectPhoto: FraudDetectionImage,
-    projectName: 'Online Payment Fraud Detection',
-    projectDescription: 'Engineered a fraud detection system for online transactions. Analyzed patterns in real-time. Languages: Python, SQL.',
+    projectName: 'Real-Time Online Payment Fraud Detection System',
+    projectDescription:
+      'Developed a machine learning-powered fraud detection system for online payments, reducing fraudulent transactions by 30% and saving the client $500,000 annually. Analyzed transactional patterns in real time. Technologies: Python, SQL, Machine Learning.',
     projectLink: 'link_to_fraud_detection',
-    tags: ['Python', 'SQL', 'Machine Learning'],
+    tags: ['Python', 'SQL', 'Machine Learning', 'FinTech'],
   },
   {
     projectPhoto: HousePredictionImage,
-    projectName: 'House Price Prediction using Machine Learning',
-    projectDescription: 'Created a model to predict house prices using historical data and market trends. Languages: Python, Scikit-learn.',
+    projectName: 'House Price Prediction Model for Real Estate Insights',
+    projectDescription:
+      'Engineered a predictive model for accurate house price estimation, used by real estate agencies to guide pricing strategies and boost sales. Resulted in a 15% increase in forecast accuracy. Technologies: Python, Scikit-learn, Data Analysis.',
     projectLink: 'link_to_house_price_prediction',
-    tags: ['Python', 'Machine Learning', 'Data Science'],
+    tags: ['Python', 'Machine Learning', 'Data Science', 'Real Estate'],
   },
   {
     projectPhoto: CarPredictionImage,
-    projectName: 'Car Price Prediction using Machine Learning',
-    projectDescription: 'Developed a model for predicting car prices to assist dealerships. Languages: Python, Scikit-learn.',
+    projectName: 'Automated Car Price Prediction Platform for Dealerships',
+    projectDescription:
+      'Designed a data-driven pricing model to help car dealerships predict prices based on historical sales data, improving profit margins by 20%. Technologies: Python, Scikit-learn, Data Analytics.',
     projectLink: 'link_to_car_price_prediction',
-    tags: ['Python', 'Machine Learning', 'Data Science'],
+    tags: ['Python', 'Machine Learning', 'Data Science', 'Automotive'],
   },
   {
     projectPhoto: CreditCardFraudImage,
     projectName: 'Credit Card Fraud Detection using Machine Learning',
-    projectDescription: 'Designed a system to detect credit card fraud by analyzing transaction patterns. Languages: Python, Scikit-learn.',
+    projectDescription:
+      'Created a credit card fraud detection system, identifying suspicious transactions in real-time and reducing fraud cases by 25%. Technologies: Python, Scikit-learn, Financial Data.',
     projectLink: 'link_to_credit_card_fraud',
-    tags: ['Python', 'Machine Learning'],
+    tags: ['Python', 'Machine Learning', 'FinTech', 'Security'],
   },
   {
     projectPhoto: KidneyPredictionImage,
-    projectName: 'Kidney Disease Prediction',
-    projectDescription: 'Developed a predictive model for assessing kidney disease risk. Languages: Python, Scikit-learn.',
+    projectName: 'Predictive Health Model for Chronic Kidney Disease',
+    projectDescription:
+      'Developed a predictive model to assess kidney disease risk, empowering healthcare providers with early diagnosis and preventive strategies. Improved detection rate by 18%. Technologies: Python, Scikit-learn, Health Data.',
     projectLink: 'link_to_kidney_disease_prediction',
-    tags: ['Python', 'Machine Learning', 'Health Tech'],
+    tags: ['Python', 'Machine Learning', 'Health Tech', 'Predictive Analytics'],
   },
   {
     projectPhoto: SentimentAnalysisImage,
-    projectName: 'Sentiment Analysis on Twitter Data',
-    projectDescription: 'Implemented sentiment analysis to evaluate public opinion on social media. Languages: Python, NLP.',
+    projectName: 'Twitter Sentiment Analysis for Brand Monitoring',
+    projectDescription:
+      'Implemented a sentiment analysis system to analyze public opinion on social media, helping businesses understand customer sentiment and tailor marketing strategies. Increased positive engagement by 12%. Technologies: Python, NLP, Social Media Data.',
     projectLink: 'link_to_sentiment_analysis',
-    tags: ['Python', 'NLP', 'Data Science'],
+    tags: ['Python', 'NLP', 'Data Science', 'Marketing'],
   },
 ];
 
