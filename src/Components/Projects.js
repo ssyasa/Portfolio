@@ -15,7 +15,7 @@ const projects = [
     projectPhoto: ChatAppImage,
     projectName: 'Real-Time Chat App with AI Integration',
     projectDescription:
-      'Built a scalable chat application with real-time voice communication and AI capabilities. Integrated with Web Speech API and ElevenLabs for enhanced user experience, helping businesses provide seamless customer support.  Technologies: JavaScript, Python.',
+      'Built a scalable chat application with real-time voice communication and AI capabilities. Integrated with Web Speech API and ElevenLabs for enhanced user experience, helping businesses provide seamless customer support.',
     projectLink: 'link_to_chat_app',
     tags: ['JavaScript', 'Python', 'AI', 'Web Development'],
   },
@@ -23,7 +23,7 @@ const projects = [
     projectPhoto: FraudDetectionImage,
     projectName: 'Real-Time Online Payment Fraud Detection System',
     projectDescription:
-      'Developed a machine learning-powered fraud detection system for online payments, reducing fraudulent transactions by 30% and saving the client $500,000 annually. Analyzed transactional patterns in real time. Technologies: Python, SQL, Machine Learning.',
+      'Developed a machine learning-powered fraud detection system for online payments, reducing fraudulent transactions by 30% and saving the client $500,000 annually. Analyzed transactional patterns in real time.',
     projectLink: 'link_to_fraud_detection',
     tags: ['Python', 'SQL', 'Machine Learning', 'FinTech'],
   },
@@ -31,7 +31,7 @@ const projects = [
     projectPhoto: HousePredictionImage,
     projectName: 'House Price Prediction Model for Real Estate Insights',
     projectDescription:
-      'Engineered a predictive model for accurate house price estimation, used by real estate agencies to guide pricing strategies and boost sales. Resulted in a 15% increase in forecast accuracy. Technologies: Python, Scikit-learn, Data Analysis.',
+      'Engineered a predictive model for accurate house price estimation, used by real estate agencies to guide pricing strategies and boost sales. Resulted in a 15% increase in forecast accuracy.',
     projectLink: 'link_to_house_price_prediction',
     tags: ['Python', 'Machine Learning', 'Data Science', 'Real Estate'],
   },
@@ -39,7 +39,7 @@ const projects = [
     projectPhoto: CarPredictionImage,
     projectName: 'Automated Car Price Prediction Platform for Dealerships',
     projectDescription:
-      'Designed a data-driven pricing model to help car dealerships predict prices based on historical sales data, improving profit margins by 20%. Technologies: Python, Scikit-learn, Data Analytics.',
+      'Designed a data-driven pricing model to help car dealerships predict prices based on historical sales data, improving profit margins by 20%.',
     projectLink: 'link_to_car_price_prediction',
     tags: ['Python', 'Machine Learning', 'Data Science', 'Automotive'],
   },
@@ -47,7 +47,7 @@ const projects = [
     projectPhoto: CreditCardFraudImage,
     projectName: 'Credit Card Fraud Detection using Machine Learning',
     projectDescription:
-      'Created a credit card fraud detection system, identifying suspicious transactions in real-time and reducing fraud cases by 25%. Technologies: Python, Scikit-learn, Financial Data.',
+      'Created a credit card fraud detection system, identifying suspicious transactions in real-time and reducing fraud cases by 25%.',
     projectLink: 'link_to_credit_card_fraud',
     tags: ['Python', 'Machine Learning', 'FinTech', 'Security'],
   },
@@ -55,7 +55,7 @@ const projects = [
     projectPhoto: KidneyPredictionImage,
     projectName: 'Predictive Health Model for Chronic Kidney Disease',
     projectDescription:
-      'Developed a predictive model to assess kidney disease risk, empowering healthcare providers with early diagnosis and preventive strategies. Improved detection rate by 18%. Technologies: Python, Scikit-learn, Health Data.',
+      'Developed a predictive model to assess kidney disease risk, empowering healthcare providers with early diagnosis and preventive strategies. Improved detection rate by 18%.',
     projectLink: 'link_to_kidney_disease_prediction',
     tags: ['Python', 'Machine Learning', 'Health Tech', 'Predictive Analytics'],
   },
@@ -63,7 +63,7 @@ const projects = [
     projectPhoto: SentimentAnalysisImage,
     projectName: 'Twitter Sentiment Analysis for Brand Monitoring',
     projectDescription:
-      'Implemented a sentiment analysis system to analyze public opinion on social media, helping businesses understand customer sentiment and tailor marketing strategies. Increased positive engagement by 12%. Technologies: Python, NLP, Social Media Data.',
+      'Implemented a sentiment analysis system to analyze public opinion on social media, helping businesses understand customer sentiment and tailor marketing strategies. Increased positive engagement by 12%.',
     projectLink: 'link_to_sentiment_analysis',
     tags: ['Python', 'NLP', 'Data Science', 'Marketing'],
   },
@@ -104,6 +104,15 @@ const ProjectBox = ({ project }) => {
       fontSize: '0.9rem',
       color: '#666',
       marginTop: '5px',
+      textAlign: 'justify', // Justifies the text
+    },
+    technologyList: {
+      fontFamily: "'Poppins', sans-serif",
+      fontSize: '0.9rem',
+      color: '#666',
+      marginTop: '5px',
+      textAlign: 'left', // Align technologies to the left
+      marginBottom: '10px', // Space between technologies and button
     },
     button: {
       backgroundColor: '#11d3ff',
@@ -138,7 +147,7 @@ const ProjectBox = ({ project }) => {
       />
       <h3 style={styles.projectName}>{project.projectName}</h3>
       <p style={styles.projectDescription}>{project.projectDescription}</p>
-      <p style={styles.projectDescription}>Tags: {project.tags.join(', ')}</p>
+      <p style={styles.technologyList}>Technologies: {project.tags.join(', ')}</p>
       <a href={project.projectLink} target="_blank" rel="noopener noreferrer">
         <button style={styles.button}>View Project</button>
       </a>
