@@ -12,19 +12,13 @@ import SentimentAnalysisImage from '../images/nlp1.jpeg.JPG';
 // Project data
 const projects = [
   {
-    projectPhoto: ChatAppImage,
-    projectName: 'Real-Time Chat App with AI Integration',
-    projectDescription:
-      'Built a scalable chat application with real-time voice communication and AI capabilities. Integrated with Web Speech API and ElevenLabs for enhanced user experience, helping businesses provide seamless customer support.',
-    projectLink: 'link_to_chat_app',
-    tags: ['JavaScript', 'Python', 'AI', 'Web Development'],
-  },
-  {
     projectPhoto: FraudDetectionImage,
     projectName: 'Real-Time Online Payment Fraud Detection System',
     projectDescription:
       'Developed a machine learning-powered fraud detection system for online payments, reducing fraudulent transactions by 30% and saving the client $500,000 annually. Analyzed transactional patterns in real time.',
     projectLink: 'link_to_fraud_detection',
+    technologies: ['Python', 'SQL', 'Machine Learning'],
+    projectType: 'Machine Learning',
     tags: ['Python', 'SQL', 'Machine Learning', 'FinTech'],
   },
   {
@@ -33,7 +27,18 @@ const projects = [
     projectDescription:
       'Engineered a predictive model for accurate house price estimation, used by real estate agencies to guide pricing strategies and boost sales. Resulted in a 15% increase in forecast accuracy.',
     projectLink: 'link_to_house_price_prediction',
+    technologies: ['Python', 'Scikit-learn', 'Data Analysis'],
+    projectType: 'Data Analytics',
     tags: ['Python', 'Machine Learning', 'Data Science', 'Real Estate'],
+  },
+  {
+    projectPhoto: ChatAppImage,
+    projectName: 'Real-Time Chat App with AI Integration',
+    projectDescription:
+      'Built a scalable chat application with real-time voice communication and AI capabilities. Integrated with Web Speech API and ElevenLabs for enhanced user experience, helping businesses provide seamless customer support.',
+    projectLink: 'link_to_chat_app',technologies: ['Python', 'TypeScript', 'Flask','SCSS'],
+    projectType: 'Full Stack Development',
+    tags: ['TypeScript', 'Python', 'AI', 'Web Development'],
   },
   {
     projectPhoto: CarPredictionImage,
@@ -41,6 +46,8 @@ const projects = [
     projectDescription:
       'Designed a data-driven pricing model to help car dealerships predict prices based on historical sales data, improving profit margins by 20%.',
     projectLink: 'link_to_car_price_prediction',
+    technologies: ['Python', 'Scikit-learn', 'Data Analytics'],
+    projectType: 'Data Analytics',
     tags: ['Python', 'Machine Learning', 'Data Science', 'Automotive'],
   },
   {
@@ -49,6 +56,8 @@ const projects = [
     projectDescription:
       'Created a credit card fraud detection system, identifying suspicious transactions in real-time and reducing fraud cases by 25%.',
     projectLink: 'link_to_credit_card_fraud',
+    technologies: ['Python', 'Scikit-learn', 'Financial Data'],
+    projectType: 'Machine Learning',
     tags: ['Python', 'Machine Learning', 'FinTech', 'Security'],
   },
   {
@@ -57,6 +66,8 @@ const projects = [
     projectDescription:
       'Developed a predictive model to assess kidney disease risk, empowering healthcare providers with early diagnosis and preventive strategies. Improved detection rate by 18%.',
     projectLink: 'link_to_kidney_disease_prediction',
+    technologies: ['Python', 'Scikit-learn', 'Health Data'],
+    projectType: 'Machine Learning',
     tags: ['Python', 'Machine Learning', 'Health Tech', 'Predictive Analytics'],
   },
   {
@@ -65,6 +76,8 @@ const projects = [
     projectDescription:
       'Implemented a sentiment analysis system to analyze public opinion on social media, helping businesses understand customer sentiment and tailor marketing strategies. Increased positive engagement by 12%.',
     projectLink: 'link_to_sentiment_analysis',
+    technologies: ['Python', 'NLP', 'Social Media Data'],
+    projectType: 'Data Analytics',
     tags: ['Python', 'NLP', 'Data Science', 'Marketing'],
   },
 ];
@@ -73,7 +86,7 @@ const projects = [
 const ProjectBox = ({ project }) => {
   const styles = {
     projectBox: {
-      textAlign: 'center',
+      textAlign: 'left',
       margin: '20px auto',
       boxShadow: '0 16px 32px rgba(128, 0, 128, 0.2)',
       padding: '20px',
@@ -82,7 +95,6 @@ const ProjectBox = ({ project }) => {
       transition: 'box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease',
       backgroundColor: '#272e54',
       overflow: 'hidden',
-      position: 'relative',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
@@ -102,17 +114,37 @@ const ProjectBox = ({ project }) => {
     projectDescription: {
       fontFamily: "'Poppins', sans-serif",
       fontSize: '0.9rem',
-      color: '#666',
+      color: '#d6d0d0',
       marginTop: '5px',
-      textAlign: 'justify', // Justifies the text
+      textAlign: 'justify', // Justifying text
     },
-    technologyList: {
-      fontFamily: "'Poppins', sans-serif",
+    projectDetails: {
+      textAlign: 'left', // Align left
       fontSize: '0.9rem',
-      color: '#666',
+      color: '#999',
       marginTop: '5px',
-      textAlign: 'left', // Align technologies to the left
-      marginBottom: '10px', // Space between technologies and button
+      fontFamily: "'Roboto', sans-serif", // Added font family for details
+    },
+    technologies: {
+      textAlign: 'left', // Align left
+      fontSize: '0.9rem',
+      color: '#999',
+      marginTop: '5px',
+      fontFamily: "'Roboto', sans-serif", // Added font family for details
+    },
+    projectType: {
+      textAlign: 'left', // Align left
+      fontSize: '0.9rem',
+      color: '#dbc21f', // Keep project type color consistent
+      marginTop: '5px',
+      fontFamily: "'Roboto', sans-serif",
+    },
+    tags: {
+      textAlign: 'left', // Align left
+      fontSize: '0.8rem',
+      color: '#b3b3b3',
+      marginTop: '5px',
+      fontFamily: "'Roboto', sans-serif",
     },
     button: {
       backgroundColor: '#11d3ff',
@@ -147,7 +179,9 @@ const ProjectBox = ({ project }) => {
       />
       <h3 style={styles.projectName}>{project.projectName}</h3>
       <p style={styles.projectDescription}>{project.projectDescription}</p>
-      <p style={styles.technologyList}>Technologies: {project.tags.join(', ')}</p>
+      <p style={styles.projectDetails}>Technologies: {project.technologies.join(', ')}</p>
+      <p style={styles.projectType}>Type: {project.projectType}</p>
+      <p style={styles.tags}>Tags: {project.tags.join(', ')}</p>
       <a href={project.projectLink} target="_blank" rel="noopener noreferrer">
         <button style={styles.button}>View Project</button>
       </a>
@@ -158,12 +192,17 @@ const ProjectBox = ({ project }) => {
 // Main AllProjects component
 const AllProjects = () => {
   const [searchTerm, setSearchTerm] = useState('');
+  const [filter, setFilter] = useState('All');
 
-  // Filter projects based on search term
-  const filteredProjects = projects.filter(project =>
-    project.projectName.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    project.projectDescription.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  // Filter projects based on search term and selected filter
+  const filteredProjects = projects.filter(project => {
+    const matchesSearch = project.projectName.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      project.projectDescription.toLowerCase().includes(searchTerm.toLowerCase());
+
+    const matchesFilter = filter === 'All' || project.projectType === filter;
+
+    return matchesSearch && matchesFilter;
+  });
 
   const styles = {
     container: {
@@ -179,18 +218,26 @@ const AllProjects = () => {
       padding: '5px',
       borderRadius: '15px',
       border: '1px solid #ccc',
-      width: '300px',
-      boxSizing: 'border-box',
+      marginLeft: '10px',
+      width: '250px',
+      transition: 'border-color 0.3s ease',
     },
-    projectContainer: {
+    filterWrapper: {
       display: 'flex',
-      flexWrap: 'wrap',
-      justifyContent: 'space-around',
+      justifyContent: 'center', // Center the filter buttons
+      marginBottom: '30px',
     },
-    noProjects: {
-      marginTop: '50px',
-      fontSize: '1.2rem',
-      color: '#999',
+    filterButton: {
+      padding: '10px 15px',
+      margin: '0 10px',
+      borderRadius: '15px',
+      border: '1px solid #dbc21f',
+      backgroundColor: '#1e1e1e',
+      color: '#dbc21f',
+      cursor: 'pointer',
+      transition: 'background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease',
+      textAlign: 'center',
+      boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', // Added shadow
     },
   };
 
@@ -199,20 +246,35 @@ const AllProjects = () => {
       <div style={styles.searchWrapper}>
         <input
           type="text"
-          placeholder="Search projects..."
+          placeholder="Search Projects..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           style={styles.searchInput}
         />
       </div>
-      <div style={styles.projectContainer}>
-        {filteredProjects.length > 0 ? (
-          filteredProjects.map((project, index) => (
-            <ProjectBox key={index} project={project} />
-          ))
-        ) : (
-          <p style={styles.noProjects}>No projects found.</p>
-        )}
+      <div style={styles.filterWrapper}>
+        {['All', 'Machine Learning', 'Full Stack Development', 'Data Analytics'].map(type => (
+          <button
+            key={type}
+            style={styles.filterButton}
+            onClick={() => setFilter(type)}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.boxShadow = '0 6px 12px rgba(0, 0, 0, 0.3)';
+              e.currentTarget.style.transform = 'translateY(-2px)'; // Slight lift effect
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+              e.currentTarget.style.transform = 'translateY(0)'; // Reset position
+            }}
+          >
+            {type}
+          </button>
+        ))}
+      </div>
+      <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+        {filteredProjects.map((project, index) => (
+          <ProjectBox key={index} project={project} />
+        ))}
       </div>
     </div>
   );
