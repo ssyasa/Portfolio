@@ -168,9 +168,8 @@ Interested in working together to bring **data-driven insights**, **AI-powered a
   
   <!-- Front-End Development -->
   <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="
-
-</a>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/>
+  </a>
   <a href="https://angular.io" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original.svg" alt="angular" width="40" height="40"/>
   </a>
@@ -178,7 +177,3 @@ Interested in working together to bring **data-driven insights**, **AI-powered a
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original.svg" alt="vuejs" width="40" height="40"/>
   </a>
 </p>
-
----
-
-This portfolio is now in a polished and professional tone while still maintaining a friendly, collaborative feel. Let me know if you want any further adjustments!
