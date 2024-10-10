@@ -8,6 +8,13 @@ import CarPredictionImage from '../images/car price prediction.jpg';
 import CreditCardFraudImage from '../images/credit card fraud.jpg';
 import KidneyPredictionImage from '../images/chronic-kidney-disease-prediction.png';
 import SentimentAnalysisImage from '../images/nlp1.jpeg.JPG';
+import AnalysisonUdemyonlinecoursedata from '../images/Analysis on Udemy online course data.png'
+import customerchurn from '../images/customer-churn-analysis.png'
+import telecomdashboard from '../images/telecom dashboard.png'
+import trainticket from '../images/Train Ticket Analysis Dashboard.png'
+import zomatodashboard from '../images/zomato dashboard.png'
+import prdashboard from '../images/pr dashboard.png'
+
 
 // Project data
 const projects = [
@@ -80,7 +87,68 @@ const projects = [
     projectType: 'Machine Learning',
     tags: ['Python', 'NLP', 'Data Science', 'Marketing'],
   },
+  {
+    projectPhoto: prdashboard,
+    projectName: 'PR Reconciliation Dashboard',
+    projectDescription:
+      'This project provides a dashboard that assists in reconciling Purchase Requests (PR) with invoices. It highlights any discrepancies between the two, allowing for easy tracking of approval statuses across departments.',
+    projectLink: 'link_to_pr_reconciliation_dashboard',
+    technologies: ['Power BI'],
+    projectType: 'Data Analytics',
+    tags: ['Power BI', 'Data Visualization', 'Finance'],
+  },
+  {
+    projectPhoto: zomatodashboard,
+    projectName: 'Zomato Dashboard',
+    projectDescription:
+      'This interactive dashboard analyzes restaurant data sourced from Zomato, focusing on trends in ratings, reviews, and cuisine types across various locations. This is useful for restaurant owners and food enthusiasts.',
+    projectLink: 'link_to_zomato_dashboard',
+    technologies: ['Power BI', 'Data Visualization'],
+    projectType: 'Data Analytics',
+    tags: ['Power BI', 'Data Visualization', 'Food Industry'],
+  },
+  {
+    projectPhoto: customerchurn,
+    projectName: 'Customer Churn Analysis',
+    projectDescription:
+      'This project focuses on analyzing customer churn in a subscription-based business model, identifying key factors that influence customer retention and attrition.',
+    projectLink: 'link_to_customer_churn_analysis',
+    technologies: ['Power BI'],
+    projectType: 'Data Analytics',
+    tags: ['Power BI', 'Predictive Analytics', 'Customer Behavior'],
+  },
+  {
+    projectPhoto: telecomdashboard,
+    projectName: 'Telecom Data Analysis',
+    projectDescription:
+      'An in-depth analysis of customer data from the telecom industry. This project provides insights into customer usage patterns, demographics, and service satisfaction, helping telecom companies optimize services.',
+    projectLink: 'link_to_telecom_data_analysis',
+    technologies: ['Power BI'],
+    projectType: 'Data Analytics',
+    tags: ['Power BI', 'Data Visualization', 'Telecom'],
+  },
+  {
+    projectPhoto: AnalysisonUdemyonlinecoursedata,
+    projectName: 'Udemy Course Analysis',
+    projectDescription:
+      'This project analyzes data from Udemy to uncover trends in course ratings, enrollment numbers, and topics of interest, helping course creators optimize their content and marketing strategies.',
+    projectLink: 'link_to_udemy_course_analysis',
+    technologies: ['Power BI', 'Data Visualization'],
+    projectType: 'Data Analytics',
+    tags: ['Power BI', 'Data Analytics', 'Education'],
+  },
+  {
+    projectPhoto: trainticket,
+    projectName: 'Train Ticket Sales Analysis',
+    projectDescription:
+      'This project examines train ticket sales data, focusing on purchase trends, peak travel times, and customer demographics to improve service planning and marketing strategies for railway companies.',
+    projectLink: 'link_to_train_ticket_sales_analysis',
+    technologies: ['Power BI', 'Data Visualization'],
+    projectType: 'Data Analytics',
+    tags: ['Power BI', 'Transport', 'Sales Analysis'],
+  }
 ];
+
 
 // ProjectBox component
 const ProjectBox = ({ project }) => {
