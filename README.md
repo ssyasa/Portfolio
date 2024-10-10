@@ -1,4 +1,4 @@
-# 🚀  <a target="_blank" href="https://github.com/ssyasa/Portfolio-main">SHREYAS.C.R <align text ="center"></a></h2>SHREYAS.C.R — Freelancer | Data Analyst | Machine Learning Enthusiast | Full-Stack Developer
+# 🚀  <a target="_blank" href="https://github.com/ssyasa/Portfolio-main">SHREYAS.C.R <align= "center"></a></h2>SHREYAS.C.R — Freelancer | Data Analyst | Machine Learning Enthusiast | Full-Stack Developer
 
 📍 **Location:** Bengaluru, India  
 📞 **Phone:** +91 99023 36213  
