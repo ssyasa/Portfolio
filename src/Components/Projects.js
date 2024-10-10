@@ -15,10 +15,10 @@ const projects = [
     projectPhoto: FraudDetectionImage,
     projectName: 'Real-Time Online Payment Fraud Detection System',
     projectDescription:
-      'Developed a machine learning-powered fraud detection system for online payments, reducing fraudulent transactions by 30% and saving the client $500,000 annually. Analyzed transactional patterns in real time.',
+      'Developed a machine learning-powered fraud detection system for online payments, reducing fraudulent transactions by 30% and saving the client $500,000 (₹41,995,000) annually. Analyzed transactional patterns in real time.',
     projectLink: 'link_to_fraud_detection',
     technologies: ['Python', 'SQL', 'Machine Learning'],
-    projectType: 'Machine Learning',
+    projectType: 'Data Analytics',
     tags: ['Python', 'SQL', 'Machine Learning', 'FinTech'],
   },
   {
@@ -28,7 +28,7 @@ const projects = [
       'Engineered a predictive model for accurate house price estimation, used by real estate agencies to guide pricing strategies and boost sales. Resulted in a 15% increase in forecast accuracy.',
     projectLink: 'link_to_house_price_prediction',
     technologies: ['Python', 'Scikit-learn', 'Data Analysis'],
-    projectType: 'Data Analytics',
+    projectType: 'Machine Learning',
     tags: ['Python', 'Machine Learning', 'Data Science', 'Real Estate'],
   },
   {
@@ -57,7 +57,7 @@ const projects = [
       'Created a credit card fraud detection system, identifying suspicious transactions in real-time and reducing fraud cases by 25%.',
     projectLink: 'link_to_credit_card_fraud',
     technologies: ['Python', 'Scikit-learn', 'Financial Data'],
-    projectType: 'Machine Learning',
+    projectType: 'Data Analytics',
     tags: ['Python', 'Machine Learning', 'FinTech', 'Security'],
   },
   {
@@ -77,7 +77,7 @@ const projects = [
       'Implemented a sentiment analysis system to analyze public opinion on social media, helping businesses understand customer sentiment and tailor marketing strategies. Increased positive engagement by 12%.',
     projectLink: 'link_to_sentiment_analysis',
     technologies: ['Python', 'NLP', 'Social Media Data'],
-    projectType: 'Data Analytics',
+    projectType: 'Machine Learning',
     tags: ['Python', 'NLP', 'Data Science', 'Marketing'],
   },
 ];
