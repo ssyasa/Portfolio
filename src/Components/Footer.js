@@ -5,8 +5,8 @@ import { GrMail } from "react-icons/gr";
 const Footer = () => {
   return (
     <footer>
-      <h4>Developed by Shreyas C.R</h4>
-      <h4>Copyright &copy; 2024 Shreyas</h4>
+      <h5>Developed by Shreyas</h5>
+      <h5>Copyright &copy; 2024 Shreyas</h5>
       <div className='footerLinks'>
         <a href="https://github.com/ssyasa" target='_blank' rel="noreferrer"><FaGithub/></a>
         <a href="https://www.linkedin.com/in/shreyas-c-r-777b4229a" target='_blank' rel="noreferrer"><FaLinkedin/></a>
