@@ -4,7 +4,6 @@ import Nav from './Components/Navbar';
 import Footer from "./Components/Footer";
 import Home from "./Components/Home";
 import About from "./Components/About";
-import Resume from "./Components/Resume";
 import Project from "./Components/Projects";
 import Services from "./Components/Services";
 import MoveToTop from "./Components/MoveToTop";
@@ -45,7 +44,6 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/About" element={<About />} />
             <Route path="/Project" element={<Project />} />
-            <Route path="/Resume" element={<Resume />} />
             <Route path="/Services" element={<Services />} />
           </Routes>
           <Footer />
