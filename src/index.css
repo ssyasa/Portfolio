@@ -63,41 +63,39 @@ b{
   top: -30px;
 }
 
-
 /* NAVBAR */
 
-.Navbar{
+.Navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
   position: fixed;
   width: 100%;
   z-index: 2;
-
   height: 70px;
   top: 0;
-  transition: all 0.7s;
+  background-color: rgba(1, 17, 26, 0.8); /* Original background */
+  transition: all 0.7s ease;
 }
 
-.blur{
-  background-color:#01111a8d;
-  backdrop-filter: blur( 15px );
-  -webkit-backdrop-filter: blur( 20px );
+.blur {
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  background-color: rgba(11, 5, 41, 0.329); /* Darker when blurred */
 }
 
-.Logo{
+
+.Logo {
   font-size: 32px;
   letter-spacing: 2px;
   padding-left: 7%;
-  color: #9067C6;
+  color: #7b4fb6;
   display: flex;
   align-items: center;
   text-align: center;
-  cursor:pointer;
+  cursor: pointer;
 }
 
-.NavbarLinks{
+.NavbarLinks {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -106,14 +104,15 @@ b{
   font-size: 22px;
 }
 
-.NavbarLinks li{
+.NavbarLinks li {
   padding: 2px 20px;
   list-style-type: none;
+  position: relative;
 }
 
-.NavbarLinks a{
+.NavbarLinks a {
   color: #c2c1c2;
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
@@ -121,12 +120,20 @@ b{
   padding: 2px 7px;
   letter-spacing: 0.5px;
   text-decoration: none;
+  transition: background-color 0.3s ease; /* Transition for background color */
 }
 
-.NavbarLinks a:hover{
-  color: #ffffff;
+.NavbarLinks li.active a {
+  background-color: rgba(144, 103, 198, 0.3); /* Background color for active link */
+  border-radius: 5px; /* Rounded corners for active link */
 }
-.NavbarLinks a::after{
+
+.NavbarLinks a:hover {
+  color: #ffffff;
+  background-color: rgba(144, 103, 198, 0.2); /* Slight background change on hover */
+}
+
+.NavbarLinks a::after {
   background-color: #ffffff;
   content: "";
   position: absolute;
@@ -137,19 +144,107 @@ b{
   border-radius: 2px;
   transition: 0.3s;
 }
-.NavbarLinks a:hover:after{
+
+.NavbarLinks a:hover:after {
   width: 95%;
 }
-.Hamburger{
+
+/* Ripple effect for links */
+.NavbarLinks a:hover::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgba(144, 103, 198, 0.6);
+  transform: translate(-50%, -50%) scale(0.1);
+  opacity: 0;
+  animation: rippleHover 0.6s ease forwards;
+}
+
+@keyframes rippleHover {
+  0% {
+    transform: translate(-50%, -50%) scale(0.1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2.5);
+    opacity: 0;
+  }
+}
+
+.Hamburger {
+  display: none;
+  position: relative;
+}
+
+.Hamburger::before,
+.Hamburger::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  width: 60px;
+  height: 60px;
+  border: 2px solid rgba(231, 231, 231, 0.6);
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.6);
+  animation: rippleEffect 1.5s infinite;
+}
+
+.Hamburger::after {
+  animation-delay: 0.75s;
+}
+
+@keyframes rippleEffect {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+}
+
+.bar {
+  display: block;
+  background-color: #E7E7E7;
+  border-radius: 50px;
+  height: 2.5px;
+  width: 30px;
+  margin: 6px;
+  transition: 0.5s;
+}
+
+.barOne {
+  rotate: -225deg;
+  position: relative;
+  top: 4px;
+  transition: 0.5s;
+}
+
+.barTwo {
   display: none;
 }
 
-@media(max-width:800px){
-  .Navbar{
+.barThree {
+  position: relative;
+  bottom: 4px;
+  rotate: 225deg;
+  transition: 0.5s;
+}
+
+/* Responsive Styles */
+@media (max-width: 800px) {
+  .Navbar {
     width: 100%;
   }
 
-  .NavbarLinks{
+  .NavbarLinks {
     font-size: 26px;
     display: flex;
     flex-direction: column;
@@ -157,51 +252,26 @@ b{
     position: fixed;
     inset: 0 0 0 50%;
     gap: 50px;
-    background-color:#431f47;
+    background-color: #431f47;
     height: 100vh;
-    padding-top: max(20%,120px);
+    padding-top: max(20%, 120px);
     transform: translateX(100%);
     transition: 0.5s;
   }
 
-  .showNavbar{
-    transform: translateX(0);    
+  .showNavbar {
+    transform: translateX(0);
   }
 
-  .Hamburger{
+  .Hamburger {
     display: block;
     z-index: 2;
     padding: 5px;
     padding-right: 7%;
     cursor: pointer;
   }
-
-  .bar{
-    display: block;
-    background-color: #E7E7E7;
-    border-radius: 50px;
-    height: 2.5px;
-    width: 30px;
-    margin: 6px;
-    transition: 0.5s;
-  }
-  .barOne{
-    rotate: -225deg;
-    position: relative;
-    top: 4px;
-    transition: 0.5s ;
-  }
-  .barTwo{
-    display: none;
-  }
-  .barThree{
-    position: relative;
-    bottom: 4px;
-    rotate: 225deg;
-    transition: 0.5s;
-  }
-  
 }
+
 
 
 /* HOME PAGE */

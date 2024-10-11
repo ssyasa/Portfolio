@@ -6,16 +6,15 @@ import { CgFileDocument } from "react-icons/cg";
 
 const Nav = () => {
     const [navbarBlur, setNavbarBlur] = useState(false);
+    const [activeLink, setActiveLink] = useState('/');
 
     useEffect(() => {
         const scrollHandler = () => {
             setNavbarBlur(window.scrollY >= 20);
         };
 
-        // Add event listener for scroll
         window.addEventListener("scroll", scrollHandler);
 
-        // Clean up the event listener on component unmount
         return () => {
             window.removeEventListener("scroll", scrollHandler);
         };
@@ -39,8 +38,13 @@ const Nav = () => {
         ham[0].classList.remove("showNavbar");
     };
 
+    const handleLinkClick = (link) => {
+        setActiveLink(link);
+        hideMenu();
+    };
+
     return (
-        <nav className={navbarBlur ? 'Navbar blur' : 'Navbar'}> 
+        <nav className={`${navbarBlur ? 'Navbar blur' : 'Navbar'}`}>
             <h1 title='Reload' onClick={() => window.location.reload(true)} className='Logo'>Portfolio</h1>
 
             <div className='Hamburger' onClick={toggleMenu}>
@@ -50,10 +54,18 @@ const Nav = () => {
             </div>
 
             <ul className='NavbarLinks'>
-                <li onClick={hideMenu}><Link to="/"><AiOutlineHome /> Home</Link></li>
-                <li onClick={hideMenu}><Link to="/About"><BsPerson /> About</Link></li>
-                <li onClick={hideMenu}><Link to="/Project"><BsCodeSlash /> Project</Link></li>
-                <li onClick={hideMenu}><Link to="/Services"><CgFileDocument /> Services</Link></li>
+                <li onClick={() => handleLinkClick('/')} className={activeLink === '/' ? 'active' : ''}>
+                    <Link to="/"><AiOutlineHome /> Home</Link>
+                </li>
+                <li onClick={() => handleLinkClick('/About')} className={activeLink === '/About' ? 'active' : ''}>
+                    <Link to="/About"><BsPerson /> About</Link>
+                </li>
+                <li onClick={() => handleLinkClick('/Project')} className={activeLink === '/Project' ? 'active' : ''}>
+                    <Link to="/Project"><BsCodeSlash /> Project</Link>
+                </li>
+                <li onClick={() => handleLinkClick('/Services')} className={activeLink === '/Services' ? 'active' : ''}>
+                    <Link to="/Services"><CgFileDocument /> Services</Link>
+                </li>
             </ul>
         </nav>
     );
