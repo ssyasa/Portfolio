@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.26c4f828.css",
+    "main.js": "/static/js/main.555cfb52.js",
+    "static/media/zomato dashboard.png": "/static/media/zomato dashboard.27540c187aa1962092be.png",
+    "static/media/fraud-detection-using-machine-ml.PNG": "/static/media/fraud-detection-using-machine-ml.a95f4ae3390b6e7fa22d.PNG",
+    "static/media/hpp.jpg": "/static/media/hpp.11e3e1a1441b45f77d02.jpg",
+    "static/media/Train Ticket Analysis Dashboard.png": "/static/media/Train Ticket Analysis Dashboard.cd43e8c5b6ee5ffcb409.png",
+    "static/media/Avatar.png": "/static/media/Avatar.fa312ccf8f85946c64d0.png",
+    "static/media/telecom dashboard.png": "/static/media/telecom dashboard.77cf7616b38ed1dea95d.png",
+    "static/media/pr dashboard.png": "/static/media/pr dashboard.d535c629bbdb24cf06ce.png",
+    "static/media/chat_app.jpg": "/static/media/chat_app.d3b8a974afb9b0ca9687.jpg",
+    "static/media/car price prediction.jpg": "/static/media/car price prediction.76fa9e01225decee7431.jpg",
+    "static/media/Analysis on Udemy online course data.png": "/static/media/Analysis on Udemy online course data.141e6b7f4fb6e1887dba.png",
+    "static/media/customer-churn-analysis.png": "/static/media/customer-churn-analysis.1be762dbaeab4b49233a.png",
+    "static/media/nlp1.jpeg.JPG": "/static/media/nlp1.jpeg.e9d2e394acffef56ecf4.JPG",
+    "static/media/credit card fraud.jpg": "/static/media/credit card fraud.3340b19081301b1a4b0a.jpg",
+    "static/media/chronic-kidney-disease-prediction.png": "/static/media/chronic-kidney-disease-prediction.aecda24b4b0da69850ce.png",
+    "index.html": "/index.html",
+    "main.26c4f828.css.map": "/static/css/main.26c4f828.css.map",
+    "main.555cfb52.js.map": "/static/js/main.555cfb52.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.26c4f828.css",
+    "static/js/main.555cfb52.js"
+  ]
+}
