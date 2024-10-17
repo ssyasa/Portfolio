@@ -1,5 +1,7 @@
 # 🚀 [SHREYAS C.R.](https://github.com/ssyasa/Portfolio-main)
 
+https://shreyas-portfolio1-nine.vercel.app/Project
+
 **Freelancer | Data Analyst | Machine Learning Enthusiast | Full-Stack Developer**
 
 📍 **Location:** Bengaluru, India  
