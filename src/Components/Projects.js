@@ -52,16 +52,6 @@ const projects = [
     tags: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Responsive Design'],
   },
   {
-    projectPhoto: FraudDetectionImage,
-    projectName: 'Real-Time Online Payment Fraud Detection System',
-    projectDescription:
-      'Developed a machine learning-powered fraud detection system for online payments, reducing fraudulent transactions by 30% and saving the client $500,000 (₹41,995,000) annually. Analyzed transactional patterns in real time.',
-    projectLink: 'link_to_fraud_detection',
-    technologies: ['Python', 'SQL', 'Machine Learning'],
-    projectType: 'Data Analytics',
-    tags: ['Python', 'SQL', 'Machine Learning', 'FinTech'],
-  },
-  {
     projectPhoto: HousePredictionImage,
     projectName: 'House Price Prediction Model for Real Estate Insights',
     projectDescription:
@@ -85,7 +75,7 @@ const projects = [
     projectName: 'Automated Car Price Prediction Platform for Dealerships',
     projectDescription:
       'Designed a data-driven pricing model to help car dealerships predict prices based on historical sales data, improving profit margins by 20%.',
-    projectLink: 'link_to_car_price_prediction',
+    projectLink: 'https://github.com/ssyasa/Data-Analytics-Projects',
     technologies: ['Python', 'Scikit-learn', 'Data Analytics'],
     projectType: 'Data Analytics',
     tags: ['Python', 'Machine Learning', 'Data Science', 'Automotive'],
@@ -95,7 +85,7 @@ const projects = [
     projectName: 'Credit Card Fraud Detection using Machine Learning',
     projectDescription:
       'Created a credit card fraud detection system, identifying suspicious transactions in real-time and reducing fraud cases by 25%.',
-    projectLink: 'link_to_credit_card_fraud',
+    projectLink: 'https://github.com/ssyasa/Data-Analytics-Projects',
     technologies: ['Python', 'Scikit-learn', 'Financial Data'],
     projectType: 'Data Analytics',
     tags: ['Python', 'Machine Learning', 'FinTech', 'Security'],
@@ -125,7 +115,7 @@ const projects = [
     projectName: 'PR Reconciliation Dashboard',
     projectDescription:
       'This project provides a dashboard that assists in reconciling Purchase Requests (PR) with invoices. It highlights any discrepancies between the two, allowing for easy tracking of approval statuses across departments.',
-    projectLink: 'link_to_pr_reconciliation_dashboard',
+    projectLink: 'https://github.com/ssyasa/Data-Analytics-Projects',
     technologies: ['Power BI'],
     projectType: 'Data Analytics',
     tags: ['Power BI', 'Data Visualization', 'Finance'],
@@ -135,7 +125,7 @@ const projects = [
     projectName: 'Zomato Dashboard',
     projectDescription:
       'This interactive dashboard analyzes restaurant data sourced from Zomato, focusing on trends in ratings, reviews, and cuisine types across various locations. This is useful for restaurant owners and food enthusiasts.',
-    projectLink: 'link_to_zomato_dashboard',
+    projectLink: 'https://github.com/ssyasa/Data-Analytics-Projects',
     technologies: ['Power BI', 'Data Visualization'],
     projectType: 'Data Analytics',
     tags: ['Power BI', 'Data Visualization', 'Food Industry'],
@@ -145,17 +135,27 @@ const projects = [
     projectName: 'Customer Churn Analysis',
     projectDescription:
       'This project focuses on analyzing customer churn in a subscription-based business model, identifying key factors that influence customer retention and attrition.',
-    projectLink: 'link_to_customer_churn_analysis',
+    projectLink: 'https://github.com/ssyasa/Data-Analytics-Projects',
     technologies: ['Power BI'],
     projectType: 'Data Analytics',
     tags: ['Power BI', 'Predictive Analytics', 'Customer Behavior'],
+  },
+  {
+    projectPhoto: FraudDetectionImage,
+    projectName: 'Real-Time Online Payment Fraud Detection System',
+    projectDescription:
+      'Developed a machine learning-powered fraud detection system for online payments, reducing fraudulent transactions by 30% and saving the client $500,000 (₹41,995,000) annually. Analyzed transactional patterns in real time.',
+    projectLink: 'https://github.com/ssyasa/Data-Analytics-Projects',
+    technologies: ['Python', 'SQL', 'Machine Learning'],
+    projectType: 'Data Analytics',
+    tags: ['Python', 'SQL', 'Machine Learning', 'FinTech'],
   },
   {
     projectPhoto: telecomdashboard,
     projectName: 'Telecom Data Analysis',
     projectDescription:
       'An in-depth analysis of customer data from the telecom industry. This project provides insights into customer usage patterns, demographics, and service satisfaction, helping telecom companies optimize services.',
-    projectLink: 'link_to_telecom_data_analysis',
+    projectLink: 'https://github.com/ssyasa/Data-Analytics-Projects',
     technologies: ['Power BI'],
     projectType: 'Data Analytics',
     tags: ['Power BI', 'Data Visualization', 'Telecom'],
