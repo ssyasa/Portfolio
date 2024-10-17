@@ -165,7 +165,7 @@ const projects = [
     projectName: 'Udemy Course Analysis',
     projectDescription:
       'This project analyzes data from Udemy to uncover trends in course ratings, enrollment numbers, and topics of interest, helping course creators optimize their content and marketing strategies.',
-    projectLink: 'link_to_udemy_course_analysis',
+    projectLink: 'https://github.com/ssyasa/Data-Analytics-Projects',
     technologies: ['Power BI', 'Data Visualization'],
     projectType: 'Data Analytics',
     tags: ['Power BI', 'Data Analytics', 'Education'],
@@ -175,7 +175,7 @@ const projects = [
     projectName: 'Train Ticket Sales Analysis',
     projectDescription:
       'This project examines train ticket sales data, focusing on purchase trends, peak travel times, and customer demographics to improve service planning and marketing strategies for railway companies.',
-    projectLink: 'link_to_train_ticket_sales_analysis',
+    projectLink: 'https://github.com/ssyasa/Data-Analytics-Projects',
     technologies: ['Power BI', 'Data Visualization'],
     projectType: 'Data Analytics',
     tags: ['Power BI', 'Transport', 'Sales Analysis'],
