@@ -14,10 +14,43 @@ import telecomdashboard from '../images/telecom dashboard.png'
 import trainticket from '../images/Train Ticket Analysis Dashboard.png'
 import zomatodashboard from '../images/zomato dashboard.png'
 import prdashboard from '../images/pr dashboard.png'
-
+import LionGymImage from '../images/lion-club image.png'; 
+import TigerClubGymImage from '../images/tiger-club.png';
+import JaguarClubGymImage from '../images/jaquar-club.png'; 
+import DepressionMLImage from '../images/DepressionMLImage.jpg'
 
 // Project data
 const projects = [
+  {
+    projectPhoto: LionGymImage,
+    projectName: 'LION GYM – Power Up Your Fitness Journey',
+    projectDescription:
+      'A fully responsive gym website with dynamic scroll animations, a BMI calculator, and contact form. Designed with a mobile-first approach, it ensures a sleek user experience across devices.',
+    projectLink: 'link_to_lion_gym',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    projectType: 'Web Development',
+    tags: ['HTML', 'CSS', 'JavaScript', 'Responsive Design'],
+  },
+  {
+    projectPhoto: TigerClubGymImage,
+    projectName: 'Tiger Club Gym – Fitness Website',
+    projectDescription:
+      'A single-page gym website built with HTML, CSS, and JavaScript, featuring a responsive design and multiple sections for gym services, classes, schedules, and pricing.',
+    projectLink: 'link_to_tiger_club_gym',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    projectType: 'Web Development',
+    tags: ['HTML', 'CSS', 'JavaScript', 'Single Page Application'],
+  },
+  {
+    projectPhoto: JaguarClubGymImage,
+    projectName: 'Jaguar Club Gym – Fitness Center Website',
+    projectDescription:
+      'A modern gym website offering details on classes, trainers, schedules, and membership. Features include smooth scrolling animations, a membership form, and Google Maps integration.',
+    projectLink: 'link_to_jaguar_club_gym',
+    technologies: ['HTML', 'CSS', 'Bootstrap', 'JavaScript'],
+    projectType: 'Web Development',
+    tags: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Responsive Design'],
+  },
   {
     projectPhoto: FraudDetectionImage,
     projectName: 'Real-Time Online Payment Fraud Detection System',
@@ -146,6 +179,16 @@ const projects = [
     technologies: ['Power BI', 'Data Visualization'],
     projectType: 'Data Analytics',
     tags: ['Power BI', 'Transport', 'Sales Analysis'],
+  },
+  {
+    projectPhoto: DepressionMLImage,
+    projectName: 'Depression State Detection using ML and Actigraphy Sensor Data',
+    projectDescription:
+      'Analyzed sensor data from depression patients to develop a predictive model for detecting depression states. This project can help healthcare professionals provide early interventions.',
+    projectLink: 'link_to_depression_ml_project',
+    technologies: ['Python', 'Pandas', 'Scikit-learn', 'Time Series Analysis'],
+    projectType: 'Machine Learning',
+    tags: ['Python', 'Machine Learning', 'Healthcare', 'Time Series Analysis'],
   }
 ];
 
@@ -321,7 +364,7 @@ const AllProjects = () => {
         />
       </div>
       <div style={styles.filterWrapper}>
-        {['All', 'Machine Learning', 'Full Stack Development', 'Data Analytics'].map(type => (
+        {['All', 'Machine Learning', 'Full Stack Development', 'Data Analytics','Web Development'].map(type => (
           <button
             key={type}
             style={styles.filterButton}
