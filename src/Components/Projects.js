@@ -26,7 +26,7 @@ const projects = [
     projectName: 'LION GYM – Power Up Your Fitness Journey',
     projectDescription:
       'A fully responsive gym website with dynamic scroll animations, a BMI calculator, and contact form. Designed with a mobile-first approach, it ensures a sleek user experience across devices.',
-    projectLink: 'link_to_lion_gym',
+    projectLink: 'https://github.com/ssyasa',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     projectType: 'Web Development',
     tags: ['HTML', 'CSS', 'JavaScript', 'Responsive Design'],
@@ -36,7 +36,7 @@ const projects = [
     projectName: 'Tiger Club Gym – Fitness Website',
     projectDescription:
       'A single-page gym website built with HTML, CSS, and JavaScript, featuring a responsive design and multiple sections for gym services, classes, schedules, and pricing.',
-    projectLink: 'link_to_tiger_club_gym',
+    projectLink: 'https://github.com/ssyasa',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     projectType: 'Web Development',
     tags: ['HTML', 'CSS', 'JavaScript', 'Single Page Application'],
@@ -46,7 +46,7 @@ const projects = [
     projectName: 'Jaguar Club Gym – Fitness Center Website',
     projectDescription:
       'A modern gym website offering details on classes, trainers, schedules, and membership. Features include smooth scrolling animations, a membership form, and Google Maps integration.',
-    projectLink: 'link_to_jaguar_club_gym',
+    projectLink: 'https://github.com/ssyasa',
     technologies: ['HTML', 'CSS', 'Bootstrap', 'JavaScript'],
     projectType: 'Web Development',
     tags: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Responsive Design'],
@@ -56,7 +56,7 @@ const projects = [
     projectName: 'House Price Prediction Model for Real Estate Insights',
     projectDescription:
       'Engineered a predictive model for accurate house price estimation, used by real estate agencies to guide pricing strategies and boost sales. Resulted in a 15% increase in forecast accuracy.',
-    projectLink: 'link_to_house_price_prediction',
+    projectLink: 'https://github.com/ssyasa',
     technologies: ['Python', 'Scikit-learn', 'Data Analysis'],
     projectType: 'Machine Learning',
     tags: ['Python', 'Machine Learning', 'Data Science', 'Real Estate'],
@@ -66,7 +66,7 @@ const projects = [
     projectName: 'Real-Time Chat App with AI Integration',
     projectDescription:
       'Built a scalable chat application with real-time voice communication and AI capabilities. Integrated with Web Speech API and ElevenLabs for enhanced user experience, helping businesses provide seamless customer support.',
-    projectLink: 'link_to_chat_app',technologies: ['Python', 'TypeScript', 'Flask','SCSS'],
+    projectLink: 'https://github.com/ssyasa',technologies: ['Python', 'TypeScript', 'Flask','SCSS'],
     projectType: 'Full Stack Development',
     tags: ['TypeScript', 'Python', 'AI', 'Web Development'],
   },
@@ -95,7 +95,7 @@ const projects = [
     projectName: 'Predictive Health Model for Chronic Kidney Disease',
     projectDescription:
       'Developed a predictive model to assess kidney disease risk, empowering healthcare providers with early diagnosis and preventive strategies. Improved detection rate by 18%.',
-    projectLink: 'link_to_kidney_disease_prediction',
+    projectLink: 'https://github.com/ssyasa',
     technologies: ['Python', 'Scikit-learn', 'Health Data'],
     projectType: 'Machine Learning',
     tags: ['Python', 'Machine Learning', 'Health Tech', 'Predictive Analytics'],
@@ -105,7 +105,7 @@ const projects = [
     projectName: 'Twitter Sentiment Analysis for Brand Monitoring',
     projectDescription:
       'Implemented a sentiment analysis system to analyze public opinion on social media, helping businesses understand customer sentiment and tailor marketing strategies. Increased positive engagement by 12%.',
-    projectLink: 'link_to_sentiment_analysis',
+    projectLink: 'https://github.com/ssyasa',
     technologies: ['Python', 'NLP', 'Social Media Data'],
     projectType: 'Machine Learning',
     tags: ['Python', 'NLP', 'Data Science', 'Marketing'],
@@ -185,7 +185,7 @@ const projects = [
     projectName: 'Depression State Detection using ML and Actigraphy Sensor Data',
     projectDescription:
       'Analyzed sensor data from depression patients to develop a predictive model for detecting depression states. This project can help healthcare professionals provide early interventions.',
-    projectLink: 'link_to_depression_ml_project',
+    projectLink: 'https://github.com/ssyasa',
     technologies: ['Python', 'Pandas', 'Scikit-learn', 'Time Series Analysis'],
     projectType: 'Machine Learning',
     tags: ['Python', 'Machine Learning', 'Healthcare', 'Time Series Analysis'],
