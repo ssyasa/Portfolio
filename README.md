@@ -2,6 +2,8 @@
 
 https://shreyas-portfolio1-nine.vercel.app/Project
 
+https://shreyas-portfolio-rust.vercel.app/
+
 **Freelancer | Data Analyst | Machine Learning Enthusiast | Full-Stack Developer**
 
 📍 **Location:** Bengaluru, India  
