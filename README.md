@@ -107,6 +107,39 @@ As an expert in **Machine Learning models**, **Predictive Analytics**, and **Ful
 - **Key Features:** Secure authentication, dynamic product management, and integrated payment processing.  
 - **Impact:** Boosted sales by 30% within the first month post-launch.
 
+### **13. Tiger Club Gym**  
+**Technologies:** React, Node.js, MongoDB  
+- **Objective:** Created a user-friendly web application for a fitness center to manage memberships, class schedules, and member engagement.  
+- **Key Features:** Membership management, real-time class bookings, and personalized workout plans.  
+- **Impact:** Enhanced member satisfaction and increased gym enrollment by 25% within three months of launch.
+
+### **14. Jaguar Club Gym**  
+**Technologies:** React, Node.js, PostgreSQL  
+- **Objective:** Developed a comprehensive management system for a premium gym chain to streamline operations and improve member experiences.  
+- **Key Features:** Integrated payment systems, analytics dashboard for trainers, and mobile app for member interaction.  
+- **Impact:** Improved operational efficiency by 30% and increased member retention through enhanced services.
+
+### **15. Lion Gym**  
+**Technologies:** React, Express, MongoDB  
+- **Objective:** Built a platform for a community gym to promote local fitness events and encourage member participation.  
+- **Key Features:** Event scheduling, member forums, and workout tracking.  
+- **Impact:** Increased community engagement and participation in events by 40% over six months.
+
+---
+
+## 💡 Core Technologies & Skills
+
+- **Languages:** Python, JavaScript, C++, Java, SQL, HTML, CSS  
+- **Web Development:** React.js, Node.js, Express, Flask, Django  
+- **Frontend:** Angular, Vue.js, Tailwind CSS  
+- **Backend:** Django, Spring Boot, ASP.NET, GraphQL  
+- **Databases:** MongoDB, MySQL, PostgreSQL  
+- **Cloud & DevOps:** AWS, Google Cloud, Docker, Kubernetes  
+- **Machine Learning:** Scikit-learn, TensorFlow, Keras, Pandas, NumPy, NLP  
+- **Data Visualization:** Power BI, Tableau, Matplotlib, Seaborn  
+- **Others:** Socket.io, OpenAI API, Stripe API
+
+
 ---
 
 ## 💡 Core Technologies & Skills
