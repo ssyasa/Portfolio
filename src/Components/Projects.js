@@ -66,7 +66,7 @@ const projects = [
     projectName: 'Real-Time Chat App with AI Integration',
     projectDescription:
       'Built a scalable chat application with real-time voice communication and AI capabilities. Integrated with Web Speech API and ElevenLabs for enhanced user experience, helping businesses provide seamless customer support.',
-    projectLink: 'https://github.com/ssyasa',technologies: ['Python', 'TypeScript', 'Flask','SCSS'],
+    projectLink: 'https://drive.google.com/file/d/1U92Z27X-u6zjw0K6Bo4JqUOTDI_d2-ba/view?usp=drive_link',technologies: ['Python', 'TypeScript', 'Flask','SCSS'],
     projectType: 'Full Stack Development',
     tags: ['TypeScript', 'Python', 'AI', 'Web Development'],
   },
