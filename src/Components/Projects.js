@@ -26,7 +26,7 @@ const projects = [
     projectName: 'LION GYM – Power Up Your Fitness Journey',
     projectDescription:
       'A fully responsive gym website with dynamic scroll animations, a BMI calculator, and contact form. Designed with a mobile-first approach, it ensures a sleek user experience across devices.',
-    projectLink: 'https://github.com/ssyasa',
+    projectLink: 'https://drive.google.com/file/d/1ZtIuQtMxqKwLRfHHnHfECuNcfqJ446Ti/view?usp=drive_link',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     projectType: 'Web Development',
     tags: ['HTML', 'CSS', 'JavaScript', 'Responsive Design'],
@@ -36,7 +36,7 @@ const projects = [
     projectName: 'Tiger Club Gym – Fitness Website',
     projectDescription:
       'A single-page gym website built with HTML, CSS, and JavaScript, featuring a responsive design and multiple sections for gym services, classes, schedules, and pricing.',
-    projectLink: 'https://github.com/ssyasa',
+    projectLink: 'https://drive.google.com/file/d/19HqJiboRMOl1o0g7WFWUFz51C1zNrCgc/view?usp=drive_link',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     projectType: 'Web Development',
     tags: ['HTML', 'CSS', 'JavaScript', 'Single Page Application'],
@@ -46,7 +46,7 @@ const projects = [
     projectName: 'Jaguar Club Gym – Fitness Center Website',
     projectDescription:
       'A modern gym website offering details on classes, trainers, schedules, and membership. Features include smooth scrolling animations, a membership form, and Google Maps integration.',
-    projectLink: 'https://github.com/ssyasa',
+    projectLink: 'https://drive.google.com/file/d/1WbTjhRG5tE-HP6NYWQzqswxlSMZzAbTQ/view?usp=drive_link',
     technologies: ['HTML', 'CSS', 'Bootstrap', 'JavaScript'],
     projectType: 'Web Development',
     tags: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Responsive Design'],
