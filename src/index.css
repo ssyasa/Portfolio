@@ -409,7 +409,7 @@ b{
 }
 
 .SkillBox{
-  width: max(15%,150px);
+  width: auto;
   height: 150px;
   display: flex;
   align-items: center;

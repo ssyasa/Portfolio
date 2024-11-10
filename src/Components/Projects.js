@@ -9,15 +9,15 @@ import CreditCardFraudImage from '../images/credit card fraud.jpg';
 import KidneyPredictionImage from '../images/chronic-kidney-disease-prediction.png';
 import SentimentAnalysisImage from '../images/nlp1.jpeg.JPG';
 import AnalysisonUdemyonlinecoursedata from '../images/Analysis on Udemy online course data.png'
-import customerchurn from '../images/customer-churn-analysis.png'
-import telecomdashboard from '../images/telecom dashboard.png'
-import trainticket from '../images/Train Ticket Analysis Dashboard.png'
-import zomatodashboard from '../images/zomato dashboard.png'
-import prdashboard from '../images/pr dashboard.png'
+import customerchurn from '../images/customer-churn-analysis.png';
+import telecomdashboard from '../images/telecom dashboard.png';
+import trainticket from '../images/Train Ticket Analysis Dashboard.png';
+import zomatodashboard from '../images/zomato dashboard.png';
+import prdashboard from '../images/pr dashboard.png';
 import LionGymImage from '../images/lion-club image.png'; 
 import TigerClubGymImage from '../images/tiger-club.png';
 import JaguarClubGymImage from '../images/jaquar-club.png'; 
-import DepressionMLImage from '../images/DepressionMLImage.jpg'
+import DepressionMLImage from '../images/DepressionMLImage.jpg';
 
 // Project data
 const projects = [
@@ -334,7 +334,7 @@ const AllProjects = () => {
       transition: 'border-color 0.3s ease',
     },
     filterWrapper: {
-      display: 'flex',
+      display: 'auto',
       justifyContent: 'center', // Center the filter buttons
       marginBottom: '30px',
     },
