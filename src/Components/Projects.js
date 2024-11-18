@@ -320,7 +320,7 @@ const AllProjects = () => {
       padding: '20px',
     },
     searchWrapper: {
-      display: 'flex',
+      display: 'auto',
       justifyContent: 'flex-end', // Aligns the search input to the right
       marginBottom: '30px',
       marginTop: '50px', // Margin to push down by 30px
