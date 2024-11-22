@@ -116,7 +116,8 @@ const Home = () => {
             <span className="pro">10+ projects done</span>
             <img
               className="round"
-              src={require("C:/Users/shrey/OneDrive/Desktop/Portfolio-main current/src/images/ss_pic-fotor-2024112221420.png")}
+              src={require("C:/Users/shrey/OneDrive/Desktop/Portfolio-main current/src/images/ss_pic-fotor-2024112221420.png")
+              }
               alt="Shreyas"
             />
             <h3>Shreyas C.R</h3>
