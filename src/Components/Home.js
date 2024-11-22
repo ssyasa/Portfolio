@@ -1,9 +1,9 @@
-/* eslint-disable no-undef */
-/* eslint-disable @typescript-eslint/no-require-imports */
 import React, { useState } from "react";
 import Lottie from "lottie-react";
 import SpaceBoy from "../LottieFiles/SpaceBoy.json";
 import Typed from "./Typed.js";
+// Correcting the image import
+import ssPic from '../images/ss_pic-fotor-2024112221420.png'; // Relative path
 
 // Dynamic greeting based on time of day
 const getTimeOfDayGreeting = () => {
@@ -116,8 +116,7 @@ const Home = () => {
             <span className="pro">10+ projects done</span>
             <img
               className="round"
-              src={require("C:/Users/shrey/OneDrive/Desktop/Portfolio-main current/src/images/ss_pic-fotor-2024112221420.png")
-              }
+              src={ssPic} // Use the imported image
               alt="Shreyas"
             />
             <h3>Shreyas C.R</h3>
