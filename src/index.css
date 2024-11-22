@@ -429,7 +429,7 @@ font-size: large;
   display: flex;
   justify-content: space-evenly;
   min-height: 80vh;
-  margin-top: 100px;
+  margin-top: 120px;
   align-items: center;
   padding: 25px;
 }
@@ -437,7 +437,7 @@ font-size: large;
 .AboutText{
   width: 50%;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 30px;
   letter-spacing: 1.2px;
 }

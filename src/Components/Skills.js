@@ -13,8 +13,6 @@ const skillsData = {
   dataAnalytics: [
     { skill: "Python", icon: <FaPython /> },
     { skill: "SQL", icon: <SiMysql /> },
-    { skill: "Postman", icon: <SiPostman /> },
-    { skill: "Git", icon: <SiGit /> },
     { skill: "Excel", icon: <SiMicrosoftexcel /> }, // Placeholder for Excel
   ],
   webDevelopment: [
@@ -27,7 +25,9 @@ const skillsData = {
     { skill: "MongoDb", icon: <SiMongodb /> },
     { skill: "Figma", icon: <SiFigma /> },
     { skill: "Canva", icon: <SiCanva /> },
-    { skill: "Express", icon: <SiPostman /> }, // Added Express
+    { skill: "Express", icon: <SiPostman /> }, 
+    { skill: "Postman", icon: <SiPostman /> },
+    { skill: "Git", icon: <SiGit /> },
     { skill: "TypeScript", icon: <DiJavascript1 /> }, // Added TypeScript
     { skill: "Sass", icon: <SiBootstrap /> }, // Added Sass
     { skill: "Jest", icon: <SiGit /> }, // Added Jest
