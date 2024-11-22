@@ -185,7 +185,7 @@ b{
   content: "";
   position: absolute;
   top: 50%;
-  left: 28%;
+  left: 38%;
   width: 60px;
   height: 60px;
   border: 2px solid rgba(231, 231, 231, 0.6);
@@ -252,7 +252,7 @@ b{
     position: fixed;
     inset: 0 0 0 50%;
     gap: 50px;
-    background-color: #431f47;
+    background-color: #41458eb3;
     height: 100vh;
     padding-top: max(20%, 120px);
     transform: translateX(100%);
