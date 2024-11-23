@@ -123,13 +123,15 @@ b{
 }
 
 .NavbarLinks li.active a {
-  background-color: rgba(144, 103, 198, 0.3); /* Background color for active link */
-  border-radius: 5px; /* Rounded corners for active link */
+  background-color: rgba(144, 103, 198, 0.3);
+  /*Backgroundcolorforactivelink*/border-radius: 25px;
+   /* Rounded corners for active link */
 }
 
 .NavbarLinks a:hover {
   color: #ffffff;
   background-color: rgba(144, 103, 198, 0.2); /* Slight background change on hover */
+  border-radius: 25px;
 }
 
 .NavbarLinks a::after {
@@ -140,12 +142,13 @@ b{
   left: 5px;
   bottom: 0;
   width: 0px;
-  border-radius: 2px;
+  border-radius: 25px;
   transition: 0.3s;
 }
 
 .NavbarLinks a:hover:after {
   width: 95%;
+  border-radius: 25px;
 }
 
 /* Ripple effect for links */
@@ -245,7 +248,7 @@ b{
 }
 
 .card-container {
-  background-color: rgba(96, 72, 168, 0.2);
+  background-color: rgba(46, 30, 94, 0.2);
   border-radius: 15px;
   box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
   color: #ffffff;
@@ -314,7 +317,8 @@ button.primary.ghost {
 
 
 /* Responsive Styles */
-@media (max-width: 800px) {
+@media (max-width: 768px) 
+{
   .Navbar {
     width: 100%;
   }
@@ -327,12 +331,15 @@ button.primary.ghost {
     position: fixed;
     inset: 0 0 0 50%;
     gap: 50px;
-    background-color: #41458eb3;
-    height: 100vh;
-    padding-top: max(20%, 120px);
+    background-color: #41458edf;
+    height: 350px;
+    padding-top: max(70px,20px);
     transform: translateX(100%);
-    transition: 0.5s;
-  }
+    transition: 0.4s;
+    margin-top: 75px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
 
   .showNavbar {
     transform: translateX(0);
@@ -588,41 +595,6 @@ font-size: large;
   text-decoration: none;
   border-style: none;
 }
-
-
-/* Resume */
-
-.ResumePage{
-  padding-top: 50px;
-  width: fit-content;
-  position: relative;
-  margin: 100px auto 0px;
-  text-align: center;
-}
-
-.resumeview{
-  pointer-events: none;
-}
-
-.downloadCV{
-  cursor:pointer;
-  margin: 25px 0px;
-  width: 200px;
-  height: 40px;
-  background-color:#431f47;
-  color: #E7E7E7;
-  text-decoration: none;
-  border-radius: 5px;
-  border-style: none; 
-  transition: all 0.5s;
-}
-
-.downloadCV:hover{
-  transition: all 0.5s;
-  background-color: #E7E7E7;
-  color: #431f47;
-}
-
 
 /* FOOTER */
 

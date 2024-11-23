@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState } from "react";
 import Lottie from "lottie-react";
 import SpaceBoy from "../LottieFiles/SpaceBoy.json";
@@ -18,7 +20,7 @@ const getTimeOfDayGreeting = () => {
 };
 
 const Home = () => {
-  const [setIsHover] = useState(false);
+  const [, setIsHover] = useState(false);
 
   return (
     <div>
