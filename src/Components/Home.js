@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState } from "react";
 import Lottie from "lottie-react";
@@ -16,6 +15,13 @@ const getTimeOfDayGreeting = () => {
     return "Good Afternoon!";
   } else {
     return "Good Evening!";
+  }
+};
+
+// Function to handle vibration on button click
+const handleButtonClick = () => {
+  if (navigator.vibrate) {
+    navigator.vibrate(100); // Vibrate for 100ms
   }
 };
 
@@ -40,9 +46,10 @@ const Home = () => {
             className="ctaButton"
             onMouseEnter={() => setIsHover(true)}
             onMouseLeave={() => setIsHover(false)}
-            onClick={() =>
-              window.open("https://www.linkedin.com/in/shreyas-c-r-777b4229a", "_blank")
-            }
+            onClick={() => {
+              handleButtonClick(); // Add vibration
+              window.open("https://www.linkedin.com/in/shreyas-c-r-777b4229a", "_blank");
+            }}
           >
             Let's Connect
           </button>
@@ -101,17 +108,19 @@ const Home = () => {
             <div className="buttons">
               <button
                 className="primary"
-                onClick={() =>
-                  window.open("mailto:shreyassrt483@gmail.com", "_blank")
-                }
+                onClick={() => {
+                  handleButtonClick(); // Add vibration
+                  window.open("mailto:shreyassrt483@gmail.com", "_blank");
+                }}
               >
                 Mail
               </button>
               <button
                 className="primary ghost"
-                onClick={() =>
-                  window.open("https://www.linkedin.com/in/shreyas-c-r-777b4229a", "_blank")
-                }
+                onClick={() => {
+                  handleButtonClick(); // Add vibration
+                  window.open("https://www.linkedin.com/in/shreyas-c-r-777b4229a", "_blank");
+                }}
               >
                 LinkedIn
               </button>
@@ -148,7 +157,13 @@ const Home = () => {
 
             <div>
               <label htmlFor="project_type" className="formbold-form-label"> What are you looking for? </label>
-              <select name="project_type" id="project_type" className="formbold-form-input" required>
+              <select
+                name="project_type"
+                id="project_type"
+                className="formbold-form-input"
+                required
+                onClick={handleButtonClick} // Add vibration
+              >
                 <option value="web-development">Web Development</option>
                 <option value="machine-learning">Machine Learning</option>
                 <option value="data-analytics">Data Analytics</option>
@@ -160,16 +175,33 @@ const Home = () => {
             <div className="formbold-input-flex">
               <div>
                 <label htmlFor="budget" className="formbold-form-label"> Budget </label>
-                <input type="text" name="budget" id="budget" placeholder="Enter your budget" className="formbold-form-input" />
+                <input
+                  type="text"
+                  name="budget"
+                  id="budget"
+                  placeholder="Enter your budget"
+                  className="formbold-form-input"
+                  onClick={handleButtonClick} // Add vibration
+                />
               </div>
             </div>
 
             <div>
               <label htmlFor="message" className="formbold-form-label"> Tell me more about your project in detail </label>
-              <textarea name="message" id="message" rows="5" placeholder="Project Description here..." className="formbold-form-input" required></textarea>
+              <textarea
+                name="message"
+                id="message"
+                rows="5"
+                placeholder="Project Description here..."
+                className="formbold-form-input"
+                required
+                onClick={handleButtonClick} // Add vibration
+              ></textarea>
             </div>
 
-            <button type="submit" className="formbold-btn">Send Message</button>
+            <button type="submit" className="formbold-btn" onClick={handleButtonClick}>
+              Send Message
+            </button>
           </form>
         </div>
       </div>
