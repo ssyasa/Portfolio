@@ -1,0 +1,128 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+  }
+  
+  .services-container {
+    padding: 50px 10px;
+    text-align: left;
+    margin-top: 30px;
+  }
+  
+  .services-heading {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: #e0e0e0;
+    animation: fade-in 1s ease-in-out;
+    text-align: center;
+  }
+  
+  .services-heading span {
+    color: #64ffda;
+  }
+  
+  .services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  /* Service Card Styling */
+  .service-card {
+    background: rgba(36, 59, 85, 0.85);
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+  }
+  
+  .service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  }
+  
+  .service-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #64ffda;
+  }
+  
+  .service-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+  }
+  
+  .service-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .service-card ul li {
+    font-size: 0.95rem;
+    margin: 5px 0;
+    color: #cfd8dc;
+  }
+  
+  /* Animations */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .service-animation-ml {
+    animation: fade-in 0.6s ease-in-out;
+  }
+  
+  .service-animation-fs {
+    animation: fade-in 0.7s ease-in-out;
+  }
+  
+  .service-animation-wd {
+    animation: fade-in 0.75s ease-in-out;
+  }
+  
+  .service-animation-da {
+    animation: fade-in 0.8s ease-in-out;
+  }
+  
+  .service-animation-gd {
+    animation: fade-in 0.9s ease-in-out;
+  }
+  
+  /* Transition Group Animations */
+  .service-item-transition-enter {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .service-item-transition-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  .service-item-transition-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .service-item-transition-exit-active {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
