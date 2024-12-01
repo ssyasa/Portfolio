@@ -332,16 +332,18 @@ const AllProjects = () => {
       padding: '20px',
     },
     searchWrapper: {
-      display: 'auto',
+      display: 'flex',
       justifyContent: 'flex-end', // Aligns the search input to the right
       marginBottom: '30px',
       marginTop: '50px', // Margin to push down by 30px
     },
     searchInput: {
       padding: '5px',
-      borderRadius: '15px',
+      borderRadius: '9px',
       border: '1px solid #ccc',
       marginLeft: '10px',
+      marginTop: '20px',
+      backgroundColor: '#211c2e',
       width: '250px',
       transition: 'border-color 0.3s ease',
     },
@@ -349,11 +351,12 @@ const AllProjects = () => {
       display: 'auto',
       justifyContent: 'center', // Center the filter buttons
       marginBottom: '30px',
+      marginTop: '20px',
     },
     filterButton: {
       padding: '10px 15px',
-      margin: '0 10px',
-      borderRadius: '15px',
+      margin: '10px 20px',
+      borderRadius: '8px',
       border: '1px solid #dbc21f',
       backgroundColor: '#1e1e1e',
       color: '#dbc21f',
