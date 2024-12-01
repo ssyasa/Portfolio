@@ -18,6 +18,8 @@ import LionGymImage from '../images/lion-club image.png';
 import TigerClubGymImage from '../images/tiger-club.png';
 import JaguarClubGymImage from '../images/jaquar-club.png'; 
 import DepressionMLImage from '../images/DepressionMLImage.jpg';
+import TourBookingImage from '../images/TourBookingImage.png'
+
 
 // Project data
 const projects = [
@@ -26,28 +28,38 @@ const projects = [
     projectName: 'LION GYM – Power Up Your Fitness Journey',
     projectDescription:
       'A fully responsive gym website with dynamic scroll animations, a BMI calculator, and contact form. Designed with a mobile-first approach, it ensures a sleek user experience across devices.',
-    projectLink: 'https://drive.google.com/file/d/1ZtIuQtMxqKwLRfHHnHfECuNcfqJ446Ti/view?usp=drive_link',
+    projectLink: 'https://lion-club-gym-website1.netlify.app/',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     projectType: 'Web Development',
     tags: ['HTML', 'CSS', 'JavaScript', 'Responsive Design'],
+  },
+  {
+    projectPhoto: TourBookingImage, // Replace with the actual image variable or path
+    projectName: 'ExploreNow – Tour & Hotel Booking Website',
+    projectDescription:
+      'An intuitive tour and hotel booking platform featuring a seamless user interface to explore destinations, compare hotel options, and book trips. Includes advanced search functionality, responsive design, interactive maps, and secure booking forms.',
+    projectLink: 'https://mytour-website1.netlify.app/',
+    technologies: ['HTML', 'CSS', 'Bootstrap', 'javascript'],
+    projectType: 'Web Development',
+    tags: ['HTML', 'CSS', 'Bootstrap', 'Responsive Design', 'Travel','Web Development'],
   },
   {
     projectPhoto: TigerClubGymImage,
     projectName: 'Tiger Club Gym – Fitness Website',
     projectDescription:
       'A single-page gym website built with HTML, CSS, and JavaScript, featuring a responsive design and multiple sections for gym services, classes, schedules, and pricing.',
-    projectLink: 'https://drive.google.com/file/d/19HqJiboRMOl1o0g7WFWUFz51C1zNrCgc/view?usp=drive_link',
+    projectLink: 'https://tiger-club-website.netlify.app/',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     projectType: 'Web Development',
-    tags: ['HTML', 'CSS', 'JavaScript', 'Single Page Application'],
+    tags: ['HTML', 'CSS', 'JavaScript', 'Responsive Design', 'Single Page Application'],
   },
   {
     projectPhoto: JaguarClubGymImage,
     projectName: 'Jaguar Club Gym – Fitness Center Website',
     projectDescription:
       'A modern gym website offering details on classes, trainers, schedules, and membership. Features include smooth scrolling animations, a membership form, and Google Maps integration.',
-    projectLink: 'https://drive.google.com/file/d/1WbTjhRG5tE-HP6NYWQzqswxlSMZzAbTQ/view?usp=drive_link',
-    technologies: ['HTML', 'CSS', 'Bootstrap', 'JavaScript'],
+    projectLink: 'https://jaguar-gym-website.netlify.app/',
+    technologies: ['HTML', 'CSS', 'Bootstrap', 'JavaScript','Responsive Design'],
     projectType: 'Web Development',
     tags: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Responsive Design'],
   },
