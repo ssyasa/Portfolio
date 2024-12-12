@@ -4,6 +4,19 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 const services = [
   {
+    title: "Web Development",
+    description:
+      "Create engaging and visually stunning websites to captivate your audience and drive conversions.",
+    features: [
+      "Landing Page Design",
+      "Custom WordPress Websites",
+      "Portfolio Websites",
+      "Corporate Websites",
+      "SEO-Optimized Pages",
+    ],
+    animation: "service-animation-wd",
+  },
+  {
     title: "Machine Learning Solutions",
     description:
       "Harness the power of machine learning to predict trends, optimize operations, and drive innovation.",
@@ -28,19 +41,6 @@ const services = [
       "Progressive Web Apps",
     ],
     animation: "service-animation-fs",
-  },
-  {
-    title: "Web Development",
-    description:
-      "Create engaging and visually stunning websites to captivate your audience and drive conversions.",
-    features: [
-      "Landing Page Design",
-      "Custom WordPress Websites",
-      "Portfolio Websites",
-      "Corporate Websites",
-      "SEO-Optimized Pages",
-    ],
-    animation: "service-animation-wd",
   },
   {
     title: "Data Analytics Services",
@@ -74,8 +74,7 @@ const Services = () => {
   return (
     <div className="services-container">
       <h1 className="services-heading">
-        <span>Our</span> Services for <b>2024 and Beyond</b>
-      </h1>
+        <span>Our</span> Services</h1>
       <TransitionGroup className="services-list">
         {services.map((service, index) => (
           <CSSTransition
