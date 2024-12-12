@@ -1,24 +1,45 @@
 /* eslint-disable react/react-in-jsx-scope */
 import {
+  SiPostman,
   SiMongodb,
+  SiMysql,
   SiGit,
+  SiTensorflow,
+  SiAmazonaws,
   SiBootstrap,
   SiFigma,
   SiCanva,
-  SiPostman,
+  SiDocker,
+  SiKubernetes,
+  SiMicrosoftexcel,
+  SiScikitlearn,
+  SiPandas,
+  SiNumpy,
+  SiOpencv,
+  SiPytorch,
+  SiKeras,
 } from "react-icons/si";
 import {
   FaReact,
   FaNodeJs,
+  FaPython,
   FaHtml5,
   FaCss3Alt,
+  FaBrain,
 } from "react-icons/fa";
 import { DiJavascript1 } from "react-icons/di";
+import { AiOutlineLineChart } from "react-icons/ai";
+import { MdLanguage } from "react-icons/md";
 
 import "./Skills.css"; // Importing the external CSS file
 
 // Data for categorized skills
 const skillsData = {
+  dataAnalytics: [
+    { skill: "Python", icon: <FaPython /> },
+    { skill: "SQL", icon: <SiMysql /> },
+    { skill: "Excel", icon: <SiMicrosoftexcel /> },
+  ],
   webDevelopment: [
     { skill: "HTML5", icon: <FaHtml5 /> },
     { skill: "CSS3", icon: <FaCss3Alt /> },
@@ -31,6 +52,21 @@ const skillsData = {
     { skill: "Canva", icon: <SiCanva /> },
     { skill: "Postman", icon: <SiPostman /> },
     { skill: "Git", icon: <SiGit /> },
+  ],
+  machineLearning: [
+    { skill: "AWS", icon: <SiAmazonaws /> },
+    { skill: "Docker", icon: <SiDocker /> },
+    { skill: "Kubernetes", icon: <SiKubernetes /> },
+    { skill: "TensorFlow", icon: <SiTensorflow /> },
+    { skill: "Scikit-Learn", icon: <SiScikitlearn /> },
+    { skill: "Pandas", icon: <SiPandas /> },
+    { skill: "NumPy", icon: <SiNumpy /> },
+    { skill: "Matplotlib", icon: <AiOutlineLineChart /> },
+    { skill: "NLP", icon: <MdLanguage /> },
+    { skill: "Keras", icon: <SiKeras /> },
+    { skill: "OpenCV", icon: <SiOpencv /> },
+    { skill: "PyTorch", icon: <SiPytorch /> },
+    { skill: "AI Ethics", icon: <FaBrain /> },
   ],
 };
 
@@ -53,7 +89,9 @@ const Skills = () => {
 
   return (
     <div className="skills-container">
-      {renderSkills(skillsData.webDevelopment, "Web Development Skills")}      
+      {renderSkills(skillsData.dataAnalytics, "Data Analytics Skills")}
+      {renderSkills(skillsData.webDevelopment, "Web Development Skills")}
+      {renderSkills(skillsData.machineLearning, "Machine Learning Skills")}
     </div>
   );
 };

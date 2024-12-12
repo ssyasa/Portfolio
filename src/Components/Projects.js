@@ -1,16 +1,24 @@
 /* eslint-disable no-undef */
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
+import ChatAppImage from '../images/chat_app.jpg';
+import FraudDetectionImage from '../images/fraud-detection-using-machine-ml.PNG';
+import HousePredictionImage from '../images/hpp.jpg';
+import CarPredictionImage from '../images/car price prediction.jpg';
+import CreditCardFraudImage from '../images/credit card fraud.jpg';
+import KidneyPredictionImage from '../images/chronic-kidney-disease-prediction.png';
+import SentimentAnalysisImage from '../images/nlp1.jpeg.JPG';
+import AnalysisonUdemyonlinecoursedata from '../images/Analysis on Udemy online course data.png'
+import customerchurn from '../images/customer-churn-analysis.png';
+import telecomdashboard from '../images/telecom dashboard.png';
+import trainticket from '../images/Train Ticket Analysis Dashboard.png';
+import zomatodashboard from '../images/zomato dashboard.png';
+import prdashboard from '../images/pr dashboard.png';
 import LionGymImage from '../images/lion-club image.png'; 
 import TigerClubGymImage from '../images/tiger-club.png';
 import JaguarClubGymImage from '../images/jaquar-club.png'; 
-import RockyFitnessGymImage from '../images/RockyFitnessGymImage.png';
-import FitClubGymImage from '../images/FitClubGymImage.png';
-import AIgymImage from '../images/AI-gym.png';
-import DEMOGYMImage from '../images/DEMO GYM.png';
-import RedDinosaurgym from '../images/Red Dinosaur Club1.png'
-import TriumphGYM from '../images/Triumph1.png'
-import Gym_Landing_Page from '../images/Gym_Landing_Page.png'
+import DepressionMLImage from '../images/DepressionMLImage.jpg';
+import TourBookingImage from '../images/TourBookingImage.png'
 
 
 // Project data
@@ -22,18 +30,18 @@ const projects = [
       'A fully responsive gym website with dynamic scroll animations, a BMI calculator, and contact form. Designed with a mobile-first approach, it ensures a sleek user experience across devices.',
     projectLink: 'https://lion-club-gym-website1.netlify.app/',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    projectType: 'Landing page',
+    projectType: 'Web Development',
     tags: ['HTML', 'CSS', 'JavaScript', 'Responsive Design'],
-  },  
+  },
   {
-    projectPhoto: FitClubGymImage,
-    projectName: 'FitClub Gym Website',
+    projectPhoto: TourBookingImage, // Replace with the actual image variable or path
+    projectName: 'ExploreNow – Tour & Hotel Booking Website',
     projectDescription:
-      'A single-page gym website built with HTML, CSS, and JavaScript, featuring a responsive design and multiple sections for gym services, classes, schedules, and pricing.',
-    projectLink: 'https://fitclub-gymwebsite.netlify.app',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    projectType: 'Landing page',
-    tags: ['HTML', 'CSS', 'JavaScript', 'Responsive Design', 'Single Page Application'],
+      'An intuitive tour and hotel booking platform featuring a seamless user interface to explore destinations, compare hotel options, and book trips. Includes advanced search functionality, responsive design, interactive maps, and secure booking forms.',
+    projectLink: 'https://mytour-website1.netlify.app/',
+    technologies: ['HTML', 'CSS', 'Bootstrap', 'javascript'],
+    projectType: 'Web Development',
+    tags: ['HTML', 'CSS', 'Bootstrap', 'Responsive Design', 'Travel','Web Development'],
   },
   {
     projectPhoto: TigerClubGymImage,
@@ -42,68 +50,8 @@ const projects = [
       'A single-page gym website built with HTML, CSS, and JavaScript, featuring a responsive design and multiple sections for gym services, classes, schedules, and pricing.',
     projectLink: 'https://tiger-club-website.netlify.app/',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    projectType: 'Landing page',
+    projectType: 'Web Development',
     tags: ['HTML', 'CSS', 'JavaScript', 'Responsive Design', 'Single Page Application'],
-  },
-  {
-    projectPhoto: RockyFitnessGymImage,
-    projectName: 'Rocky Fitness Gym Website',
-    projectDescription:
-      'A single-page gym website built with HTML, CSS, and JavaScript, featuring a responsive design and multiple sections for gym services, classes, schedules, and pricing.',
-    projectLink: 'https://rocky-gym-website.netlify.app',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    projectType: 'Landing page',
-    tags: ['HTML', 'CSS', 'JavaScript', 'Responsive Design', 'Single Page Application'],
-  },
-  {
-    projectPhoto: AIgymImage,
-    projectName: 'AI Powered Fitness Website',
-    projectDescription:
-      'A single-page gym website built with HTML, CSS, and JavaScript, featuring a responsive design and multiple sections for gym services, classes, schedules, and pricing.',
-    projectLink: 'https://ai-gym-website.netlify.app',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    projectType: 'Ai Landing page',
-    tags: ['HTML', 'CSS', 'JavaScript', 'Responsive Design', 'Single Page Application','React'],
-  },
-  {
-    projectPhoto: DEMOGYMImage,
-    projectName: 'DEMO Gym – Fitness Website',
-    projectDescription:
-      'A modern gym website offering details on classes, trainers, schedules, and membership. Features include smooth scrolling animations, a membership form, and Google Maps integration.',
-    projectLink: 'https://demo-gym-responsive-website.netlify.app',
-    technologies: ['HTML', 'CSS', 'Bootstrap', 'JavaScript','Responsive Design'],
-    projectType: 'Landing page',
-    tags: ['HTML', 'CSS', 'JavaScript', 'React', 'Responsive Design'],
-  },  
-  {
-    projectPhoto: RedDinosaurgym,
-    projectName: 'Red Dinosaur Gym',
-    projectDescription:
-      'A modern gym website offering details on classes, trainers, schedules, and membership. Features include smooth scrolling animations, a membership form, and Google Maps integration.',
-    projectLink: 'https://red-dinosaur-club-website.netlify.app',
-    technologies: ['HTML', 'CSS', 'Bootstrap', 'JavaScript','Responsive Design'],
-    projectType: 'Landing page',
-    tags: ['HTML', 'CSS', 'JavaScript', 'React','Responsive Design'],
-  },
-  {
-    projectPhoto: Gym_Landing_Page,
-    projectName: 'GymME Landing Page',
-    projectDescription:
-      'A modern gym website offering details on classes, trainers, schedules, and membership. Features include smooth scrolling animations, a membership form, and Google Maps integration.',
-    projectLink: 'https://gym-landing-page1.netlify.app/',
-    technologies: ['HTML', 'CSS', 'Bootstrap', 'JavaScript','Responsive Design'],
-    projectType: 'Landing page',
-    tags: ['HTML', 'CSS', 'JavaScript', 'React', 'Responsive Design'],
-  },
-  {
-    projectPhoto: TriumphGYM,
-    projectName: 'Triumph GYM ',
-    projectDescription:
-      'A modern gym website offering details on classes, trainers, schedules, and membership. Features include smooth scrolling animations, a membership form, and Google Maps integration.',
-    projectLink: 'https://triumph-gym-website.netlify.app',
-    technologies: ['HTML', 'CSS', 'Bootstrap', 'JavaScript','Responsive Design'],
-    projectType: 'Landing page',
-    tags: ['HTML', 'CSS', 'JavaScript', 'React', 'Responsive Design'],
   },
   {
     projectPhoto: JaguarClubGymImage,
@@ -112,9 +60,148 @@ const projects = [
       'A modern gym website offering details on classes, trainers, schedules, and membership. Features include smooth scrolling animations, a membership form, and Google Maps integration.',
     projectLink: 'https://jaguar-gym-website.netlify.app/',
     technologies: ['HTML', 'CSS', 'Bootstrap', 'JavaScript','Responsive Design'],
-    projectType: 'Landing page',
+    projectType: 'Web Development',
     tags: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Responsive Design'],
   },
+  {
+    projectPhoto: HousePredictionImage,
+    projectName: 'House Price Prediction Model for Real Estate Insights',
+    projectDescription:
+      'Engineered a predictive model for accurate house price estimation, used by real estate agencies to guide pricing strategies and boost sales. Resulted in a 15% increase in forecast accuracy.',
+    projectLink: 'https://github.com/ssyasa',
+    technologies: ['Python', 'Scikit-learn', 'Data Analysis'],
+    projectType: 'Machine Learning',
+    tags: ['Python', 'Machine Learning', 'Data Science', 'Real Estate'],
+  },
+  {
+    projectPhoto: ChatAppImage,
+    projectName: 'Real-Time Chat App with AI Integration',
+    projectDescription:
+      'Built a scalable chat application with real-time voice communication and AI capabilities. Integrated with Web Speech API and ElevenLabs for enhanced user experience, helping businesses provide seamless customer support.',
+    projectLink: 'https://drive.google.com/file/d/1U92Z27X-u6zjw0K6Bo4JqUOTDI_d2-ba/view?usp=drive_link',technologies: ['Python', 'TypeScript', 'Flask','SCSS'],
+    projectType: 'Full Stack Development',
+    tags: ['TypeScript', 'Python', 'AI', 'Web Development'],
+  },
+  {
+    projectPhoto: CarPredictionImage,
+    projectName: 'Automated Car Price Prediction Platform for Dealerships',
+    projectDescription:
+      'Designed a data-driven pricing model to help car dealerships predict prices based on historical sales data, improving profit margins by 20%.',
+    projectLink: 'https://github.com/ssyasa/Data-Analytics-Projects',
+    technologies: ['Python', 'Scikit-learn', 'Data Analytics'],
+    projectType: 'Data Analytics',
+    tags: ['Python', 'Machine Learning', 'Data Science', 'Automotive'],
+  },
+  {
+    projectPhoto: CreditCardFraudImage,
+    projectName: 'Credit Card Fraud Detection using Machine Learning',
+    projectDescription:
+      'Created a credit card fraud detection system, identifying suspicious transactions in real-time and reducing fraud cases by 25%.',
+    projectLink: 'https://github.com/ssyasa/Data-Analytics-Projects',
+    technologies: ['Python', 'Scikit-learn', 'Financial Data'],
+    projectType: 'Data Analytics',
+    tags: ['Python', 'Machine Learning', 'FinTech', 'Security'],
+  },
+  {
+    projectPhoto: KidneyPredictionImage,
+    projectName: 'Predictive Health Model for Chronic Kidney Disease',
+    projectDescription:
+      'Developed a predictive model to assess kidney disease risk, empowering healthcare providers with early diagnosis and preventive strategies. Improved detection rate by 18%.',
+    projectLink: 'https://github.com/ssyasa',
+    technologies: ['Python', 'Scikit-learn', 'Health Data'],
+    projectType: 'Machine Learning',
+    tags: ['Python', 'Machine Learning', 'Health Tech', 'Predictive Analytics'],
+  },
+  {
+    projectPhoto: SentimentAnalysisImage,
+    projectName: 'Twitter Sentiment Analysis for Brand Monitoring',
+    projectDescription:
+      'Implemented a sentiment analysis system to analyze public opinion on social media, helping businesses understand customer sentiment and tailor marketing strategies. Increased positive engagement by 12%.',
+    projectLink: 'https://github.com/ssyasa',
+    technologies: ['Python', 'NLP', 'Social Media Data'],
+    projectType: 'Machine Learning',
+    tags: ['Python', 'NLP', 'Data Science', 'Marketing'],
+  },
+  {
+    projectPhoto: prdashboard,
+    projectName: 'PR Reconciliation Dashboard',
+    projectDescription:
+      'This project provides a dashboard that assists in reconciling Purchase Requests (PR) with invoices. It highlights any discrepancies between the two, allowing for easy tracking of approval statuses across departments.',
+    projectLink: 'https://github.com/ssyasa/Data-Analytics-Projects',
+    technologies: ['Power BI'],
+    projectType: 'Data Analytics',
+    tags: ['Power BI', 'Data Visualization', 'Finance'],
+  },
+  {
+    projectPhoto: zomatodashboard,
+    projectName: 'Zomato Dashboard',
+    projectDescription:
+      'This interactive dashboard analyzes restaurant data sourced from Zomato, focusing on trends in ratings, reviews, and cuisine types across various locations. This is useful for restaurant owners and food enthusiasts.',
+    projectLink: 'https://github.com/ssyasa/Data-Analytics-Projects',
+    technologies: ['Power BI', 'Data Visualization'],
+    projectType: 'Data Analytics',
+    tags: ['Power BI', 'Data Visualization', 'Food Industry'],
+  },
+  {
+    projectPhoto: customerchurn,
+    projectName: 'Customer Churn Analysis',
+    projectDescription:
+      'This project focuses on analyzing customer churn in a subscription-based business model, identifying key factors that influence customer retention and attrition.',
+    projectLink: 'https://github.com/ssyasa/Data-Analytics-Projects',
+    technologies: ['Power BI'],
+    projectType: 'Data Analytics',
+    tags: ['Power BI', 'Predictive Analytics', 'Customer Behavior'],
+  },
+  {
+    projectPhoto: FraudDetectionImage,
+    projectName: 'Real-Time Online Payment Fraud Detection System',
+    projectDescription:
+      'Developed a machine learning-powered fraud detection system for online payments, reducing fraudulent transactions by 30% and saving the client $500,000 (₹41,995,000) annually. Analyzed transactional patterns in real time.',
+    projectLink: 'https://github.com/ssyasa/Data-Analytics-Projects',
+    technologies: ['Python', 'SQL', 'Machine Learning'],
+    projectType: 'Data Analytics',
+    tags: ['Python', 'SQL', 'Machine Learning', 'FinTech'],
+  },
+  {
+    projectPhoto: telecomdashboard,
+    projectName: 'Telecom Data Analysis',
+    projectDescription:
+      'An in-depth analysis of customer data from the telecom industry. This project provides insights into customer usage patterns, demographics, and service satisfaction, helping telecom companies optimize services.',
+    projectLink: 'https://github.com/ssyasa/Data-Analytics-Projects',
+    technologies: ['Power BI'],
+    projectType: 'Data Analytics',
+    tags: ['Power BI', 'Data Visualization', 'Telecom'],
+  },
+  {
+    projectPhoto: AnalysisonUdemyonlinecoursedata,
+    projectName: 'Udemy Course Analysis',
+    projectDescription:
+      'This project analyzes data from Udemy to uncover trends in course ratings, enrollment numbers, and topics of interest, helping course creators optimize their content and marketing strategies.',
+    projectLink: 'https://github.com/ssyasa/Data-Analytics-Projects',
+    technologies: ['Power BI', 'Data Visualization'],
+    projectType: 'Data Analytics',
+    tags: ['Power BI', 'Data Analytics', 'Education'],
+  },
+  {
+    projectPhoto: trainticket,
+    projectName: 'Train Ticket Sales Analysis',
+    projectDescription:
+      'This project examines train ticket sales data, focusing on purchase trends, peak travel times, and customer demographics to improve service planning and marketing strategies for railway companies.',
+    projectLink: 'https://github.com/ssyasa/Data-Analytics-Projects',
+    technologies: ['Power BI', 'Data Visualization'],
+    projectType: 'Data Analytics',
+    tags: ['Power BI', 'Transport', 'Sales Analysis'],
+  },
+  {
+    projectPhoto: DepressionMLImage,
+    projectName: 'Depression State Detection using ML and Actigraphy Sensor Data',
+    projectDescription:
+      'Analyzed sensor data from depression patients to develop a predictive model for detecting depression states. This project can help healthcare professionals provide early interventions.',
+    projectLink: 'https://github.com/ssyasa',
+    technologies: ['Python', 'Pandas', 'Scikit-learn', 'Time Series Analysis'],
+    projectType: 'Machine Learning',
+    tags: ['Python', 'Machine Learning', 'Healthcare', 'Time Series Analysis'],
+  }
 ];
 
 
@@ -228,7 +315,7 @@ const ProjectBox = ({ project }) => {
 // Main AllProjects component
 const AllProjects = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [filter] = useState('All');
+  const [filter, setFilter] = useState('All');
 
   // Filter projects based on search term and selected filter
   const filteredProjects = projects.filter(project => {
@@ -253,10 +340,10 @@ const AllProjects = () => {
     searchInput: {
       padding: '5px',
       borderRadius: '9px',
-      border: '1px solid black',
+      border: '1px solid #ccc',
       marginLeft: '10px',
       marginTop: '20px',
-
+      backgroundColor: '#211c2e',
       width: '250px',
       transition: 'border-color 0.3s ease',
     },
@@ -290,6 +377,25 @@ const AllProjects = () => {
           onChange={(e) => setSearchTerm(e.target.value)}
           style={styles.searchInput}
         />
+      </div>
+      <div style={styles.filterWrapper}>
+        {['All', 'Machine Learning', 'Full Stack Development', 'Data Analytics','Web Development'].map(type => (
+          <button
+            key={type}
+            style={styles.filterButton}
+            onClick={() => setFilter(type)}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.boxShadow = '0 6px 12px rgba(0, 0, 0, 0.3)';
+              e.currentTarget.style.transform = 'translateY(-2px)'; // Slight lift effect
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+              e.currentTarget.style.transform = 'translateY(0)'; // Reset position
+            }}
+          >
+            {type}
+          </button>
+        ))}
       </div>
       <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
         {filteredProjects.map((project, index) => (

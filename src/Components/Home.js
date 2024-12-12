@@ -45,7 +45,7 @@ const Home = () => {
           <Typed />
           <p className="ctaText">
             Let's turn your vision into reality with innovative solutions in{" "}
-            <b>Web Development</b>
+            <b>Web Development</b> and <b>Machine Learning</b>.
           </p>
           <button
             className="ctaButton"
@@ -72,13 +72,12 @@ const Home = () => {
           </h1>
           <h6 className="about_text_paragraphs">
             As a versatile <b>Freelancer</b> with a deep passion for{" "}
-            <b>Web Development</b>, I
+            <b>Data Analytics</b>, <b>Machine Learning</b>, and <b>Web Development</b>, I
             help businesses and individuals turn ideas into actionable, scalable
-            solutions. 
-            <br />
-            <br />
-            With a degree in <b>Bachelor of Technology</b> and hands-on experience across various industries, I specialize in crafting
-            data-driven applications and predictive models that deliver measurable results.
+            solutions. With a degree in <b>Bachelor of Technology</b> and hands-on
+            experience across various industries, I specialize in crafting
+            data-driven applications and predictive models that deliver measurable
+            results.
             <br />
             <br />
             When I'm not building innovative projects, you’ll find me exploring
@@ -99,7 +98,7 @@ const Home = () => {
             />
             <h3>Shreyas C.R</h3>
             <h6>Bengaluru</h6>
-            <p>Expert Web Developer</p>
+            <p>Expert Web Developer & Machine Learning Enthusiast</p>
             <div className="buttons">
               <button
                 className="primary"
